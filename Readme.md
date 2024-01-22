@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
-* Студент: [Павел Воронов](https://up.htmlacademy.ru/adaptive-individual/1/user/1643425).
-* Наставник: `Неизвестно`.
+- Студент: [Павел Воронов](https://up.htmlacademy.ru/adaptive-individual/1/user/1643425).
+- Наставник: `Наталья Зотова`.
 
 ---
 
