@@ -19,13 +19,13 @@
         <nav class="header-nav">
           <button class="header-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="header-nav_list nav-list">
-            <li class="nav-list__item nav-list__item--current">
+            <li class="nav-list__item">
               <a href="index.html">главная</a>
             </li>
             <li class="nav-list__item">
               <a href="#">каталог продукции</a>
             </li>
-            <li class="nav-list__item">
+            <li class="nav-list__item nav-list__item--current">
               <a href="form.html">подбор программы</a>
             </li>
           </ul>
@@ -33,88 +33,93 @@
       </div>
     </header>
     <main class="main-container">
-      <section class="promo">
-        <div class="promo-wrapper">
-          <h1 class="promo-title promo-title__subject promo-title__subject--head">Функциональное
-            питание для котов</h1>
-          <p class="promo-title__text promo-title__text--subtitle">Занялся собой? Займись котом!</p>
-          <img class="promo-title__image" src="/source/img/index-cat-chiken.jpg" width="280" height="270" alt="Оранжевая банка Cat Energy со вкусом курицы">
-          <a class="promo-button promo-button__program button__program--primary" href="form.html">подобрать программу</a>
-        </div>
-      </section>
-      <section class="prospects">
-        <div class="prospects-wrapper">
-          <h2 class="visually-hidden">Подбор программы</h2>
-          <ul class="prospects-list prospects-list__items">
-            <li class="prospects-list__item prospects-item">
-              <div class="prospects-item__container prospects-item__container--primary">
-                <h3 class="prospects-list__item-title">похудение</h3>
-                <p class="prospects-list__item-text prospects-list__item-text--mod">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-                <a class="prospects-link prospects-link--mod" href="#">каталог slim</a>
-              </div>
-            </li>
-            <li class="prospects-list__item prospects-item">
-              <div class="prospects-item__container prospects-item__container--secondary">
-                <h3 class="prospects-list__item-title">набор массы</h3>
-                <p class="prospects-list__item-text prospects-list__item-text--mod"> Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-                <a class="prospects-link prospects-link--mod" href="#">каталог pro</a>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="advantages">
-        <div class="advantages-wrapper">
-          <h2 class="advantages-title">Как это работает</h2>
-          <ul class="advantages-list advantages-items">
-            <li class="advantages-item advantages-item--primary">
-              <p class="advantages-item__description">Функциональное питание содержит только полезные питательные вещества.</p>
-            </li>
-            <li class="advantages-item advantages-item--secondary">
-              <p class="advantages-item__description">Выпускается в виде порошка,
-                который нужно лишь залить кипятком и готово.</p>
-            </li>
-            <li class="advantages-item advantages-item--tertiary">
-              <p class="advantages-item__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
-            </li>
-            <li class="advantages-item advantages-item--quaternary">
-              <p class="advantages-item__description">Уже через месяц наслаждайтесь
-                изменениями к лучшему вашего питомца!</p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="example">
-        <div class="example-wrapper">
-          <div class="example-first-part">
-            <h2 class="example-title">Живой пример</h2>
-            <p class="example-text">Борис сбросил 5 кг за 2 месяца, просто заменив свой
-              обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-            <ul class="example-list example-list__position">
-              <li class="example-item example-item__frame">
-                <b class="example-title">5 КГ</b>
-                <p class="example-text">снижение веса</p>
+
+      <h1 class="program-title title-location">Подбор программы</h1>
+      <p class="program-text program-text__locaion">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
+        <section class="program">
+          <fieldset class="program-filter program-filter__input">
+            <ul class="program-list program-list__position">
+              <li class="program-item program-item__position">
+                <label class="program-filter-label" for="label-name">ИМЯ:*</label>
+                <input class="program-filter-input program-field" id="label-name" type="text" value="барсик">
               </li>
-              <li class="example-item example-item__frame">
-                <b class="example-title">60 ДНЕЙ</b>
-                <p class="example-text">затрачено времени</p>
+              <li class="program-item program-item__position">
+                <label class="program-filter-label" for="label-weight">Вес (кг):*</label>
+                <input class="program-filter-input program-field" id="label-weight" type="text" value="7">
+              </li>
+              <li class="program-item program-item__position">
+                <label class="program-filter-label" for="label-age">Возраст (лет):</label>
+                <input class="program-filter-input program-field" id="label-age" type="text" value="7">
               </li>
             </ul>
-            <ul class="example-items">
-              <li class="example-list__primary">
-                <b class="example-description">Затраты на питание:</b>
+          </fieldset>
+          <fieldset class="program-filter program-filter__radio">
+            <ul class="program-list program-list__position">
+              <li class="program-item program-item__position">
+                <input class="program-filter-input program-field" id="weight-loss" type="radio" value="weight-loss" name="weight-loss" checked>
+                <label class="program-filter-label" for="weight-loss">похудение</label>
               </li>
-              <li class="example-list__secondary">
-                <b class="example-description">15 000 РУБ.</b>
+              <li class="program-item program-item__position">
+                <input class="program-filter-input program-field" id="weight-gain" type="radio" value="weight-gain" name="weight-gain">
+                <label class="program-filter-label" for="weight-gain">Набор массы</label>
+              </li>
+              <li class="program-item program-item__position">
+                <input class="program-filter-input program-field" id="don't-know" type="radio" value="don't-know" name="don't-know">
+                <label class="program-filter-label" for="don't-know">Не знаю (Нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
+        </section>
+        <section class="page-contacts contacts">
+          <div class="contacts-wrapper contacts-wrapper--frame">
+            <h2 class="contacts-title">Контактные данные (владельца кота)</h2>
+            <ul class="contacts-list">
+              <li class="contacts-item">
+                <label class="contacts-label" for="contacts-email">E-mail:*</label>
+                <input class="contacts-input contacts-field-icon--primary" placeholder="кuklachev@gmail.com" type="email" name="contacts-email" id="contacts-email" required>
+              </li>
+              <li class="contacts-item">
+                <label class="contacts-label" for="contacts-phone">Телефон:*</label>
+                <input class="contacts-input contacts-field-icon--secondary" placeholder="8 (960) 900-60-90" type="text" name="contacts-phone" id="contacts-phone" required>
               </li>
             </ul>
           </div>
-          <div class="example-compare">
-            <img class="example-compare__image compare-image--primary" src="/source/img/chubby-cat.jpg" width="138" height="256" alt="Пухлый кот">
-            <img class="example-compare__image compare-image--secondary" src="/source/img/skinny-cat.jpg" width="138" height="256" alt="Худой кот">
+        </section>
+        <section class="page-contacts contacts">
+          <div class="comment-wrapper contacts-wrapper--frame">
+            <h2 class="contacts-title">Комментарий</h2>
+            <textarea name="contacts-comment" id="comment" cols="50" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
-        </div>
-      </section>
+        </section>
+        <section class="page-additionally contacts">
+          <div class="additionally-wrapper contacts-wrapper--frame">
+            <h2 class="additionally-title">Контактные данные (владельца кота)</h2>
+            <ul class="additionally-list">
+              <li class="additionally-item">
+                <input class="additionally-filter-input additionally-field" id="sugar" type="checkbox" value="sugar" name="sugar" checked>
+                <label class="program-filter-label" for="sugar">сахарозаменитель</label>
+              </li>
+              <li class="additionally-item">
+                <input class="additionally-filter-input additionally-field" id="water" type="checkbox" value="water" name="water">
+                <label class="program-filter-label" for="water">питьевая вода</label>
+              </li>
+              <li class="additionally-item">
+                <input class="additionally-filter-input additionally-field" id="milk" type="checkbox" value="milk" name="milk">
+                <label class="program-filter-label" for="milk">молоко</label>
+              </li>
+              <li class="additionally-item">
+                <input class="additionally-filter-input additionally-field" id="vitamins" type="checkbox" value="vitamins" name="vitamins">
+                <label class="program-filter-label" for="vitamins">витамины</label>
+              </li>
+            </ul>
+            <div class="button-wrapper">
+              <button class="additionally-button button__program--primary" type="submit">отправить заявку</button>
+            </div>
+            <span class="additionally-text">* — Обязательные поля</span>
+          </div>
+        </section>
+      </form>
       <footer class="page-footer">
         <div class="cooperation-wrapper">
           <b class="cooperation-title">приглашаем к сотрудничеству дилеров!</b>
