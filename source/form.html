@@ -15,10 +15,10 @@
       <a class="page-header__logo-img" href="#">
         <img class="page-header__logo-image logo-img" src="/source/img/svg/logo-2.svg" width="101" height="18" alt="Название онлайн магазина">
       </a>
-      <div class="header-nav__wrapper">
+      <div class="page-header__wrapper">
         <nav class="header-nav">
           <button class="header-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <ul class="header-nav_list nav-list">
+          <ul class="header-nav__list nav-list">
             <li class="nav-list__item">
               <a href="index.html">главная</a>
             </li>
@@ -26,7 +26,7 @@
               <a href="#">каталог продукции</a>
             </li>
             <li class="nav-list__item nav-list__item--current">
-              <a href="form.html">подбор программы</a>
+              <a href="form.html" aria-current="page">подбор программы</a>
             </li>
           </ul>
         </nav>
@@ -35,36 +35,36 @@
     <main class="main-container">
 
       <h1 class="program-title title-location">Подбор программы</h1>
-      <p class="program-text program-text__locaion">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <p class="program-text program-text-locaion">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
         <section class="program">
-          <fieldset class="program-filter program-filter__input">
-            <ul class="program-list program-list__position">
-              <li class="program-item program-item__position">
+          <fieldset class="program-filter program-filter-input">
+            <ul class="program-list program-filter-position">
+              <li class="program-item program-item-position">
                 <label class="program-filter-label" for="label-name">ИМЯ:*</label>
                 <input class="program-filter-input program-field" id="label-name" type="text" value="барсик">
               </li>
-              <li class="program-item program-item__position">
+              <li class="program-item program-item-position">
                 <label class="program-filter-label" for="label-weight">Вес (кг):*</label>
                 <input class="program-filter-input program-field" id="label-weight" type="text" value="7">
               </li>
-              <li class="program-item program-item__position">
+              <li class="program-item program-item-position">
                 <label class="program-filter-label" for="label-age">Возраст (лет):</label>
                 <input class="program-filter-input program-field" id="label-age" type="text" value="7">
               </li>
             </ul>
           </fieldset>
-          <fieldset class="program-filter program-filter__radio">
-            <ul class="program-list program-list__position">
-              <li class="program-item program-item__position">
+          <fieldset class="program-filter program-filter-radio">
+            <ul class="program-list program-list-position">
+              <li class="program-item program-item-position">
                 <input class="program-filter-input program-field" id="weight-loss" type="radio" value="weight-loss" name="weight-loss" checked>
                 <label class="program-filter-label" for="weight-loss">похудение</label>
               </li>
-              <li class="program-item program-item__position">
+              <li class="program-item program-item-position">
                 <input class="program-filter-input program-field" id="weight-gain" type="radio" value="weight-gain" name="weight-gain">
                 <label class="program-filter-label" for="weight-gain">Набор массы</label>
               </li>
-              <li class="program-item program-item__position">
+              <li class="program-item program-item-position">
                 <input class="program-filter-input program-field" id="don't-know" type="radio" value="don't-know" name="don't-know">
                 <label class="program-filter-label" for="don't-know">Не знаю (Нужен ваш совет)</label>
               </li>
@@ -72,28 +72,28 @@
           </fieldset>
         </section>
         <section class="page-contacts contacts">
-          <div class="contacts-wrapper contacts-wrapper--frame">
+          <div class="contacts-wrapper contacts__frame">
             <h2 class="contacts-title">Контактные данные (владельца кота)</h2>
             <ul class="contacts-list">
-              <li class="contacts-item">
+              <li class="contacts-item contacts-label">
                 <label class="contacts-label" for="contacts-email">E-mail:*</label>
-                <input class="contacts-input contacts-field-icon--primary" placeholder="кuklachev@gmail.com" type="email" name="contacts-email" id="contacts-email" required>
+                <input class="contacts-label__icon contacts-label__icon--primary" placeholder="кuklachev@gmail.com" type="email" name="contacts-email" id="contacts-email" required>
               </li>
-              <li class="contacts-item">
+              <li class="contacts-item contacts-label">
                 <label class="contacts-label" for="contacts-phone">Телефон:*</label>
-                <input class="contacts-input contacts-field-icon--secondary" placeholder="8 (960) 900-60-90" type="text" name="contacts-phone" id="contacts-phone" required>
+                <input class="contacts-label__icon contacts-label__icon--secondary" placeholder="8 (960) 900-60-90" type="text" name="contacts-phone" id="contacts-phone" required>
               </li>
             </ul>
           </div>
         </section>
         <section class="page-contacts contacts">
-          <div class="comment-wrapper contacts-wrapper--frame">
+          <div class="comment-wrapper contacts__frame">
             <h2 class="contacts-title">Комментарий</h2>
             <textarea name="contacts-comment" id="comment" cols="50" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
         </section>
         <section class="page-additionally contacts">
-          <div class="additionally-wrapper contacts-wrapper--frame">
+          <div class="additionally-wrapper contacts__frame">
             <h2 class="additionally-title">Дополнительно</h2>
             <ul class="additionally-list">
               <li class="additionally-item">
@@ -113,8 +113,8 @@
                 <label class="program-filter-label" for="vitamins">витамины</label>
               </li>
             </ul>
-            <div class="button-wrapper">
-              <button class="additionally-button button__program--primary" type="submit">отправить заявку</button>
+            <div class="wrapper-button">
+              <button class="additionally-button wrapper-button__base wrapper-button__base--primary" type="submit">отправить заявку</button>
             </div>
             <span class="additionally-text">* — Обязательные поля</span>
           </div>
@@ -132,7 +132,7 @@
           <path fill="#111" d="M1.62 21.96a9.43 9.43 0 0 1-1.6-5.72V7.76a9.56 9.56 0 0 1 1.5-5.82C2.62.61 4.32 0 6.83 0c2.5 0 4.1.61 5.1 1.74a7.43 7.43 0 0 1 1.51 5v2.04h-4.9V6.43c.03-.7-.07-1.39-.3-2.04a1.42 1.42 0 0 0-1.4-.82c-.71 0-1.21.2-1.41.72a6.72 6.72 0 0 0-.3 2.25v10.92a4.3 4.3 0 0 0 .4 2.15c.2.5.7.71 1.4.71s1.1-.2 1.3-.71c.23-.7.33-1.42.3-2.15v-2.45h4.91v2.05a7.92 7.92 0 0 1-1.5 5.1c-1 1.23-2.7 1.84-5.1 1.84-2.41-.1-4.22-.71-5.22-2.04ZM19.35.3h5.7l4.21 23.3h-4.6l-.8-4.91h-3.31l-.8 4.9h-4.7L19.34.31Zm4.1 15.33-1.2-9.1-1.2 9.1h2.4ZM32.77 4.19h-3.4V.3h11.9v3.78h-3.4v19.5h-5.1V4.2ZM50.4.3h8.8v2.46h-5.7v7.66h4.6v2.35h-4.6v8.57h5.7v2.35h-8.9V.31h.1ZM61.8.3h2.21l6.51 15.43V.3h2.6v23.28h-2l-6.6-15.93v15.93H61.8V.31ZM76.13.3h8.81v2.46h-5.7v7.66h4.6v2.35h-4.6v8.57h5.7v2.35h-8.81V.31ZM87.54.3h4.61a7.9 7.9 0 0 1 5.1 1.44c1.1.92 1.6 2.55 1.6 4.7 0 2.96-.9 4.8-2.8 5.4l3.21 11.65h-3.1l-3-10.93h-2.51V23.5h-3.2V.3h.1Zm4.41 10.01c1.03.1 2.06-.2 2.9-.81.6-.51.9-1.53.9-3.07a6.72 6.72 0 0 0-.3-2.24 2.58 2.58 0 0 0-1.1-1.23 4.49 4.49 0 0 0-2.2-.4h-1.4v7.65h1.2v.1ZM102.86 21.86a10.49 10.49 0 0 1-1.4-5.93V8.17a17 17 0 0 1 .5-4.4c.34-1.06 1-2 1.9-2.65 1.12-.67 2.41-1 3.71-.92 2.1 0 3.6.51 4.5 1.64a7.93 7.93 0 0 1 1.41 5.1v.82h-3v-.71c0-.86-.07-1.71-.2-2.56a2.05 2.05 0 0 0-.8-1.32 3.05 3.05 0 0 0-1.9-.51 2.96 2.96 0 0 0-2.01.6 2.3 2.3 0 0 0-.8 1.64c-.13.92-.2 1.84-.2 2.76v8.68a9.43 9.43 0 0 0 .6 3.88c.4.82 1.2 1.12 2.4 1.12a2.38 2.38 0 0 0 2.4-1.22c.53-1.3.77-2.69.7-4.09V14.4h-2.9v-2.35h5.81V23.6h-2l-.3-2.65a4.17 4.17 0 0 1-1.56 2.2c-.74.53-1.64.8-2.55.76a4.92 4.92 0 0 1-4.3-2.04ZM119.99 15.42 115.09.41h3l3.5 11.23L125 .41H128l-4.9 15.01v8.17h-3.01v-8.17h-.1Z" />
         </svg>
       </div>
-      <div class="page-footer-social__wrapper">
+      <div class="page-footer__wrapper">
         <ul class="page-footer-social social-list">
           <li class="social-item">
             <a class="social-link" href="https://vk.com/htmlacademy">
@@ -161,8 +161,8 @@
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        <a class="copyright__link--logo" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright-link-logo" href="https://htmlacademy.ru/intensive/adaptive">
           <svg xmlns="http://www.w3.org/2000/svg" width="27" height="34" fill="none" viewBox="0 0 27 34">
             <g clip-path="url(#a)">
               <path fill="#666" d="M13.64.02 13.5 0 0 1.4v24.61L13.5 34 27 26.01V1.41L13.64 0Zm11.6 25L13.5 31.96 1.77 25.02v-10.1l11.68 6.93.02 1.25-8.02-4.75v1.23l8.04 4.8.02 1.3-8.05-4.76v1.22l8.04 4.81 8.12-4.83V16.9l3.62-2.15v10.26Zm0-11.57L22 15.33l-1.48.88-7.06-4.19-.01 1.23 6.04 3.57-.06.03-.13.07-.86.5-4.98-2.95-.01 1.22 3.93 2.33-.93.61-.02.01-2.97-1.74-.01 1.23 1.94 1.13-1.98 1.19L1.8 13.58l11.63-6.96 11.8 6.83Zm0-1.22L13.43 5.3 1.77 12.22V2.99L13.5 1.76 25.23 3v9.24Z" />
