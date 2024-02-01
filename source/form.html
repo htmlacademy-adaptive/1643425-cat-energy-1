@@ -3,38 +3,39 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
 <body>
   <div class="wrapper">
     <header class="page-header">
-      <a class="page-header__logo" href="#">
-        <img class="page-header__logo-image logo-image" src="/source/img/svg/logo-mobile.svg" width="33" height="38" alt="Логотип онлайн магазина">
-      </a>
-      <a class="page-header__logo-img" href="#">
-        <img class="page-header__logo-image logo-img" src="/source/img/svg/logo-2.svg" width="101" height="18" alt="Название онлайн магазина">
-      </a>
-      <div class="page-header__wrapper">
-        <nav class="header-nav">
-          <button class="header-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <ul class="header-nav__list nav-list">
-            <li class="nav-list__item">
-              <a href="index.html">главная</a>
-            </li>
-            <li class="nav-list__item">
-              <a href="#">каталог продукции</a>
-            </li>
-            <li class="nav-list__item nav-list__item--current">
-              <a href="form.html" aria-current="page">подбор программы</a>
-            </li>
-          </ul>
-        </nav>
+      <div class="page-header__container container">
+        <a class="page-header__logo " href="index.html">
+          <img class="page-header__logo-image logo-image" src="/source/img/svg/logo-mobile.svg" width="33" height="38" alt="Логотип онлайн магазина">
+          <img class="page-header__logo-image logo-img" src="/source/img/svg/logo-cat-energy.svg" width="101" height="18" alt="Название онлайн магазина">
+        </a>
+        <div class="page-header__wrapper">
+          <nav class="header-nav">
+            <button class="header-nav__toggle" type="button" aria-label="Открыть меню"><span class="header-nav__toggle-decor"></span></button>
+            <ul class="header-nav__list nav-list">
+              <li class="nav-list__item nav-list__item--current">
+                <a href="index.html">главная</a>
+              </li>
+              <li class="nav-list__item">
+                <a href="catalog.html">каталог продукции</a>
+              </li>
+              <li class="nav-list__item">
+                <a href="form.html" aria-current="page">подбор программы</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <main class="main-container">
 
-      <h1 class="program-title title-location">Подбор программы</h1>
+      <h1 class="main-container__title title-location">Подбор программы</h1>
       <p class="program-text program-text-locaion">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
         <section class="program">
