@@ -1,0 +1,10 @@
+.container *,
+.container *::before,
+.container *::after {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 280px;
+  margin: 0 auto;
+}

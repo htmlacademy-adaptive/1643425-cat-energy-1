@@ -1,0 +1,26 @@
+.nav-list {
+  display: none;
+
+  background-color: #ffffff;
+}
+
+.nav-list__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  list-style-type: none;
+}
+
+.nav-list__link {
+  padding: 22px;
+
+  list-style-type: none;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  font-family: "Oswald";
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+}

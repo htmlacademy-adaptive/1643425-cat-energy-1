@@ -1,0 +1,31 @@
+.promo__wrapper {
+  width: 320px;
+  height: 302px;
+
+  background-image: url("../img/promo-cat.jpg");
+}
+
+.promo__wrapper::after {
+  content: "";
+
+  background-color: #68b738;
+  opacity: 85%;
+}
+
+.page-title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  font-family: "Oswald";
+  text-align: center;
+  color: #ffffff;
+}
+
+.promo__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  font-family: "Oswald";
+  color: #ffffff;
+  text-transform: uppercase;
+}
