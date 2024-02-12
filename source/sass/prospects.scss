@@ -1,0 +1,41 @@
+.prospects__list {
+  margin: 0;
+  padding: 0;
+}
+
+.prospects__item {
+  display: block;
+  width: 227px;
+  margin: 0 auto;
+}
+
+.prospects__item-title {
+  font-weight: 400;
+  font-size: 24px;
+  font-family: "Oswald";
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.prospects__item-text {
+  margin: 0;
+  padding-bottom: 38px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  font-family: "Lato";
+  color: #444444;
+}
+
+.prospects__link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  font-family: "Oswald";
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+}

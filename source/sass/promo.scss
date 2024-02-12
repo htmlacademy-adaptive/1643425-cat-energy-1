@@ -1,4 +1,65 @@
+.promo {
+  .promo__title {
+    color: #ffffff;
+  }
+}
+
+.promo__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  font-family: "Oswald";
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
 .promo__description {
+  position: relative;
+  z-index: 3;
+
   width: 249px;
+  margin: 0 auto;
+}
+
+.promo__wrapper {
+  position: relative;
+
+  width: 320px;
+  height: 302px;
+  margin-bottom: 145px;
+
+  background-image: url("../img/promo-cat.jpg");
+}
+
+.promo__wrapper::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+
+  display: block;
+  width: 320px;
+  height: 302px;
+
+  background-color: #68b738;
+  opacity: 85%;
+}
+
+.promo__image-container {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.promo__image {
+  position: relative;
+  z-index: 3;
+
+  display: block;
+  margin: 0 auto;
+}
+
+.promo__button {
+  display: block;
+  width: 280px;
   margin: 0 auto;
 }
