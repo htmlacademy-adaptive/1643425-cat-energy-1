@@ -1,0 +1,32 @@
+.map__contact {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+}
+
+.map__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  font-family: "Oswald";
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.map__address {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  font-family: "Lato";
+  color: #444444;
+}
+
+.map__iframe {
+  margin-bottom: 40px;
+}
+
+.page-footer__logo {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
