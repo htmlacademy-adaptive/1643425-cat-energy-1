@@ -8,9 +8,30 @@
 }
 
 .advantages__list {
+  display: grid;
   width: 280px;
   margin: 0;
   padding: 0;
+
+  column-gap: 20px;
+
+  grid-template-columns: 60px 1fr;
+}
+
+.advantages__item--primary {
+  grid-column: 2/3;
+}
+
+.advantages__item--secondary {
+  grid-column: 2/3;
+}
+
+.advantages__item--tertiary {
+  grid-column: 2/3;
+}
+
+.advantages__item--quaternary {
+  grid-column: 2/3;
 }
 
 .advantages__item {

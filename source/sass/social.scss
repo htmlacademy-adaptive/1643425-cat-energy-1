@@ -1,5 +1,23 @@
 .social {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 150px;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+.social__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  list-style-type: none;
+}
+
+.social__link {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
