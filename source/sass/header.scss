@@ -1,31 +1,32 @@
+.page-header {
+  position: relative;
+}
+
 .page-header__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  min-height: 65px;
 }
 
 .page-header__wrapper {
   position: relative;
 }
 
-.header-nav__list {
-  position: absolute;
-  top: 100%;
-  right: -20px;
-  z-index: 4;
-
-  width: 320px;
-  padding: 0;
+.page-header__logo {
+  display: flex;
+  align-items: center;
 }
 
-.nav-list__item::before {
+.page-header__container::after {
   content: "";
   position: absolute;
-  top: 0;
+  bottom: 0;
+  left: 0;
 
   display: block;
-  width: 100%;
+  width: 320px;
   height: 1px;
 
   background-color: #d9d9d9;

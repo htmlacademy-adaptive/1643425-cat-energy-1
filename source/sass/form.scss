@@ -1,11 +1,45 @@
-.form__text {
+.form {
   font-weight: 400;
+  font-size: 16px;
+  line-height: 112%;
+  font-family: "Oswald";
+  color: #444444;
+  text-transform: uppercase;
+}
 
+.form__main-title {
+  margin-bottom: 37px;
+
+  text-align: start;
+}
+
+.form__text {
+  margin-bottom: 39px;
+
+  font-weight: 400;
   font-size: 14px;
-
   line-height: 129%;
   font-family: "Oswald";
-
   color: #000000;
   text-transform: uppercase;
+}
+
+.form__fieldset {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
+.form__group-item {
+  display: flex;
+}
+
+/* .form__label {
+  margin-right: 13px;
+} */
+
+.form__input {
+  width: 100%;
+  /* padding: 14px; */
 }
