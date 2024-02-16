@@ -1,0 +1,52 @@
+.catalog__list {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.catalog-card {
+  list-style-type: none;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 133%;
+  font-family: "Lato";
+  text-align: center;
+  color: #444444;
+}
+
+.catalog-card__link {
+  text-decoration: none;
+}
+
+.catalog-card__title {
+  margin: 0 0 14px;
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 125%;
+  font-family: "Oswald";
+  text-align: start;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.catalog-card__wrapper {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* .catalog-card__image {
+  display: block;
+  justify-content: center;
+  align-content: center;
+} */
+.catalog-card__table-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-card__button {
+  grid-column: 1/-1;
+}
