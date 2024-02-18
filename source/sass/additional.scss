@@ -1,0 +1,111 @@
+.additional__title {
+  margin-bottom: 49px;
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  font-family: "Oswald";
+  color: #000000;
+}
+
+.additional__items {
+  width: 280px;
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
+}
+
+.additional__item {
+  display: grid;
+
+  list-style-type: none;
+
+  border-top: 1px solid #cdcdcd;
+
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.additional__item:last-child {
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.additional__name {
+  margin: 13px 0;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  font-family: "Oswald";
+  color: var#222222;
+  text-transform: uppercase;
+}
+
+.additional {
+  &__quantity,
+  &__price {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    font-family: "Lato";
+    color: #444444;
+  }
+}
+
+.additional__quantity {
+  grid-column: 1/2;
+}
+
+.additional__price {
+  grid-column: 2/3;
+  justify-self: end;
+}
+
+.additional__button {
+  margin: 15px 0 19px;
+
+  grid-column: 1/-1;
+}
+
+.additional__present {
+  position: relative;
+
+  width: 280px;
+  height: 290px;
+  margin-bottom: 61px;
+
+  background-image: url("../img/catalog-cat-backpack.png");
+  background-repeat: no-repeat;
+}
+
+.additional__present::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+
+  display: block;
+  width: 280px;
+  height: 290px;
+
+  background-color: #68b738;
+  opacity: 85%;
+}
+
+.additional__present-text {
+  position: absolute;
+  right: 50%;
+  z-index: 2;
+
+  display: block;
+  width: 161px;
+  margin: 0 auto;
+  margin-top: 186px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  font-family: "Lato";
+  text-align: center;
+  color: #ffffff;
+
+  transform: translateX(50%);
+}
