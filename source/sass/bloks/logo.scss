@@ -1,0 +1,31 @@
+.logo {
+  display: block;
+
+  text-decoration: none;
+
+  &--header {
+    display: grid;
+    align-items: center;
+
+    column-gap: 56px;
+
+    grid-template-columns: auto 1fr;
+  }
+
+  &--footer {
+    width: 128px;
+    height: 24px;
+  }
+}
+
+.logo__image {
+  display: block;
+  width: 33px;
+  height: 38px;
+}
+
+.logo__text {
+  display: block;
+  width: 101px;
+  height: 18px;
+}

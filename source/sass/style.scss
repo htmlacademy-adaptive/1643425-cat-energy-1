@@ -1,42 +1,53 @@
 // Начните писать стили здесь
-@use "header.scss";
+@import "./global/variables.scss";
 
-@use "fonts.scss";
+@import "./global/fonts.scss";
 
-@use "wrapper.scss";
+@import "./global/global.scss";
 
-@use "container.scss";
+@import "./global/visually-hidden.scss";
 
-@use "logo.scss";
+@import "./global/wrapper.scss";
 
-@use "nav-list.scss";
+@import "./global/container.scss";
 
-@use "promo.scss";
+// Blocks
+@import "./blocks/page-title";
 
-@use "page-title";
+@import "./blocks/button.scss";
 
-@use "button.scss";
+@import "./blocks/logo.scss";
 
-@use "prospects.scss";
+@import "./blocks/page-header.scss";
 
-@use "advantages.scss";
+@import "./blocks/nav-list.scss";
 
-@use "example.scss";
+@import "./blocks/header-nav.scss";
 
-@use "slider.scss";
+@import "./blocks/promo.scss";
 
-@use "page-footer.scss";
+@import "./blocks/prospects.scss";
 
-@use "social.scss";
+@import "./blocks/advantages.scss";
 
-@use "copyright.scss";
+@import "./blocks/example.scss";
 
-@use "map.scss";
+@import "./blocks/slider.scss";
 
-@use "form.scss";
+@import "./blocks/social.scss";
 
-@use "control.scss";
+@import "./blocks/copyright.scss";
 
-@use "catalog.scss";
+@import "./blocks/map.scss";
 
-@use "additional.scss";
+@import "./blocks/form.scss";
+
+@import "./blocks/control.scss";
+
+@import "./blocks/catalog.scss";
+
+@import "./blocks/catalog-card.scss";
+
+@import "./blocks/additional.scss";
+
+@import "./blocks/page-footer.scss";

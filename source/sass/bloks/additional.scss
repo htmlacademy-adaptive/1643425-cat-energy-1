@@ -1,0 +1,72 @@
+.additional__title {
+  margin-bottom: 49px;
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  font-family: $font-oswald;
+  color: #000000;
+}
+
+.additional__items {
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.additional__item {
+  display: grid;
+  justify-content: space-between;
+  padding: 13px 0 18px;
+
+  border-top: 1px solid #cdcdcd;
+
+  gap: 14px;
+  grid-template-columns: repeat(2, auto);
+}
+
+.additional__item:last-child {
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.additional__name {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: $font-oswald;
+  color: #222222;
+  text-transform: uppercase;
+
+  grid-column: 1 / -1;
+}
+
+.additional__item span {
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
+}
+
+.additional__button {
+  grid-column: 1/-1;
+}
+
+.additional__present {
+  margin: 0;
+  padding: 172px 20px 26px;
+
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+
+  background-image: url("../img/svg/icon-gift.svg"),
+    linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+    url("../img/catalog-cat-backpack.png");
+  background-repeat: no-repeat;
+  background-position: top 59px center, top, top;
+  background-size: 78px 80px, auto, cover;
+}
