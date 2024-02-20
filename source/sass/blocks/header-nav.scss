@@ -1,0 +1,13 @@
+.header-nav__list {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  z-index: 4;
+
+  display: none;
+}
+
+.header-nav__toggle:active + .header-nav__list {
+  display: block;
+}

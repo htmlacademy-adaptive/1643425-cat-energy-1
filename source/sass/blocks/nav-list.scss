@@ -1,0 +1,27 @@
+.nav-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  background-color: #ffffff;
+  border-top: 1px solid #d9d9d9;
+}
+
+.nav-list__item {
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.nav-list__link {
+  display: block;
+  padding: 22px;
+
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  font-family: $font-oswald;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+}

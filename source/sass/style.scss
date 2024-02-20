@@ -1,1 +1,53 @@
 // Начните писать стили здесь
+@import "./global/variables.scss";
+
+@import "./global/fonts.scss";
+
+@import "./global/global.scss";
+
+@import "./global/visually-hidden.scss";
+
+@import "./global/wrapper.scss";
+
+@import "./global/container.scss";
+
+// Blocks
+@import "./blocks/page-title.scss";
+
+@import "./blocks/button.scss";
+
+@import "./blocks/logo.scss";
+
+@import "./blocks/page-header.scss";
+
+@import "./blocks/nav-list.scss";
+
+@import "./blocks/header-nav.scss";
+
+@import "./blocks/promo.scss";
+
+@import "./blocks/prospects.scss";
+
+@import "./blocks/advantages.scss";
+
+@import "./blocks/example.scss";
+
+@import "./blocks/slider.scss";
+
+@import "./blocks/social.scss";
+
+@import "./blocks/copyright.scss";
+
+@import "./blocks/map.scss";
+
+@import "./blocks/form.scss";
+
+@import "./blocks/control.scss";
+
+@import "./blocks/catalog.scss";
+
+@import "./blocks/catalog-card.scss";
+
+@import "./blocks/additional.scss";
+
+@import "./blocks/page-footer.scss";

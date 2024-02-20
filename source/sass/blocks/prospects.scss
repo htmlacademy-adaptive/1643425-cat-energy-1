@@ -1,0 +1,60 @@
+.prospects {
+  padding-top: 20px;
+}
+
+.prospects__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.prospects__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30px 20px 22px;
+
+  background-color: #f2f2f2;
+  background-repeat: no-repeat;
+
+  gap: 19px;
+}
+
+.prospects__item-title {
+  margin: 0 0 10px 70px;
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  font-family: $font-oswald;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.prospects__item-text {
+  margin: 0;
+  padding-bottom: 38px;
+
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.prospects__link {
+  position: relative;
+
+  display: block;
+  width: fit-content;
+  padding-right: 48px;
+
+  font-size: 16px;
+  line-height: 16px;
+  font-family: $font-oswald;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+}
