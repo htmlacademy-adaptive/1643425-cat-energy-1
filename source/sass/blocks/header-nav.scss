@@ -8,6 +8,6 @@
   display: none;
 }
 
-.header-nav--open .header-nav__list {
+.header-nav__toggle:active + .header-nav__list {
   display: block;
 }
