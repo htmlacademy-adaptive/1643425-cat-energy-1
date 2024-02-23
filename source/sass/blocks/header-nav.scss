@@ -11,3 +11,15 @@
 .header-nav__toggle:active + .header-nav__list {
   display: block;
 }
+
+@media (min-width: $tablet-width) {
+  .header-nav__list {
+    position: relative;
+
+    display: flex;
+  }
+
+  .header-nav__toggle {
+    display: none;
+  }
+}

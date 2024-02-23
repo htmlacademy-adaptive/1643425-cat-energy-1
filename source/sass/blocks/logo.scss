@@ -29,3 +29,9 @@
   width: 101px;
   height: 18px;
 }
+
+@media (min-width: $tablet-width) {
+  .logo--header {
+    column-gap: 13px;
+  }
+}
