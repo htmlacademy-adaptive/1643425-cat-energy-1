@@ -1,5 +1,12 @@
 .promo__wrapper {
   position: relative;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    margin-bottom: 82px;
+
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .promo__description {
@@ -21,13 +28,34 @@
   background-size: auto, cover;
 
   @media (min-width: $tablet-width) {
-    width: 500px;
-    padding: 65px 0 0 90px;
+    width: 515px;
+    padding: 65px 0 0 80px;
 
     background-color: #ffffff;
     background-image: none;
   }
 }
+
+/* перенести псевдоэлемент на хидер */
+/* .promo__description::after {
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+
+    width: 1040px;
+    height: 694px;
+
+    background-color: rgba(104, 183, 56, 0.85);
+    background-image: linear-gradient(
+        rgba(104, 183, 56, 0.85),
+        rgba(104, 183, 56, 0.85)
+      ),
+      url("../../img/promo-cat-desktop.jpg");
+    background-repeat: repeat, no-repeat;
+    background-position: top;
+    background-size: auto, cover;
+  }
+} */
 
 .promo__title {
   line-height: 36px;
@@ -63,6 +91,10 @@
   @media (min-width: $tablet-width) {
     margin: 0 auto 3px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .promo__image {
@@ -86,6 +118,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    left: 180px;
+    top: 100%;
+    left: 170px;
   }
 }
