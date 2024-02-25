@@ -7,6 +7,10 @@
   padding: 0;
 
   list-style: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .prospects__item {
@@ -19,6 +23,16 @@
   background-repeat: no-repeat;
 
   gap: 19px;
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 332px 100px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 159px 62px 55px 52px;
+
+    gap: 0;
+  }
 }
 
 .prospects__item-title {
@@ -30,6 +44,19 @@
   font-family: $font-oswald;
   color: #000000;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 73px;
+    padding-left: 162px;
+  }
 }
 
 .prospects__item-text {
@@ -41,6 +68,13 @@
   color: #444444;
 
   border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+
+    border-bottom: none;
+  }
 }
 
 .prospects__link {
@@ -57,4 +91,9 @@
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

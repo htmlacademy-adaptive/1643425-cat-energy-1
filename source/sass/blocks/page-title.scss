@@ -7,4 +7,9 @@
   font-family: $font-oswald;
   text-align: center;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }

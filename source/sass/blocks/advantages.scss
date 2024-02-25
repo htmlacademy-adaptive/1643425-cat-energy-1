@@ -4,6 +4,12 @@
 
 .advantages__title {
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+
+    text-align: start;
+  }
 }
 
 .advantages__list {
@@ -14,6 +20,10 @@
   list-style: none;
 
   gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .advantages__item {
