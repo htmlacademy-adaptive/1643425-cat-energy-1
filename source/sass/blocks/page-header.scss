@@ -2,7 +2,6 @@
   position: relative;
 }
 
-/* перенести псевдоэлемент на хидер */
 @media (min-width: $desktop-width) {
   .page-header::after {
     content: "";
@@ -21,6 +20,8 @@
       ),
       url("../../img/promo-cat-desktop.jpg");
     background-repeat: repeat, no-repeat;
+
+    object-fit: cover;
   }
 }
 

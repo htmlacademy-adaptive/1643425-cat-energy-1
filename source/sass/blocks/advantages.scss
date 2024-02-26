@@ -1,5 +1,13 @@
 .advantages {
   padding: 20px 0 49px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 149px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 126px;
+  }
 }
 
 .advantages__title {
@@ -22,7 +30,13 @@
   gap: 20px;
 
   @media (min-width: $tablet-width) {
+    gap: 100px 179px;
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 94px;
+    grid-template-columns: repeat(3, 1fr) 250px;
   }
 }
 
@@ -35,6 +49,17 @@
   font-size: 14px;
   line-height: 18px;
   color: #444444;
+
+  @media (min-width: $tablet-width) {
+    padding: 111px 50px 0 0;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+  }
 
   &::before {
     content: "";
@@ -49,6 +74,11 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 28px;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
   }
 
   &--primary::before {
