@@ -2,6 +2,12 @@
   overflow: hidden;
 }
 
+.form {
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+  }
+}
+
 .form__container {
   max-width: 1440px;
   padding: 0;
@@ -17,6 +23,10 @@
 
 .form__main-title {
   margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+  }
 }
 
 .form__text {
@@ -27,6 +37,28 @@
   font-family: $font-oswald;
   color: #000000;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 66px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
+  }
+}
+
+.form__fieldset-wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    align-items: center;
+    margin-bottom: 70px;
+
+    gap: 80px;
+    grid-template-columns: repeat(2, 570px);
+  }
 }
 
 .form__fieldset {
@@ -49,22 +81,77 @@
 
     border-top: 1px solid #d9d9d9;
     border-bottom: 1px solid #d9d9d9;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 65px;
+      padding-left: 27px;
+
+      border: 1px solid #d9d9d9;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+      padding: 27px 28px;
+    }
   }
 
   &--contacts {
     padding: 43px 20px 25px;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 0;
+    }
   }
 
   &--commit {
     padding: 36px 20px 20px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 87px;
+      padding-left: 0;
+    }
   }
 
   &--check {
     padding: 32px 20px 19px;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 0;
+    }
   }
 
   &--submit {
     padding: 15px 20px 32px;
+  }
+
+  &--lines {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 65px;
+      padding-left: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 70px;
+    }
+  }
+}
+
+.form__group {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.form__group--position {
+  @media (min-width: $desktop-width) {
+    display: grid;
+
+    gap: 80px;
+    grid-template-columns: repeat(2, 570px);
   }
 }
 
@@ -75,6 +162,10 @@
 
   gap: 14px;
   grid-template-columns: max-content 1fr;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .form__label {
@@ -82,6 +173,11 @@
   line-height: 18px;
   font-family: $font-oswald;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .form__input {
@@ -98,6 +194,13 @@
 
   background-color: transparent;
   border: 1px solid #e7e7e7;
+
+  @media (min-width: $tablet-width) {
+    padding: 11px 20px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 textarea.form__input {
@@ -112,6 +215,11 @@ textarea.form__input {
   line-height: 27px;
   font-family: $font-oswald;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .form__submit {

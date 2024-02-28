@@ -15,6 +15,10 @@
   font-size: 16px;
   line-height: 18px;
   font-family: $font-oswald;
-
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
