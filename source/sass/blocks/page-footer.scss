@@ -19,6 +19,9 @@
   margin: 0 auto 19px;
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0;
   }
 }
