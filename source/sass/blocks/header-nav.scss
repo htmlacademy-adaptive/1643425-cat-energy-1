@@ -27,21 +27,3 @@
 .header-nav__toggle:active + .header-nav__list {
   display: block;
 }
-
-/* @media (min-width: $tablet-width) {
-  .header-nav__list {
-    position: relative;
-
-    display: flex;
-  }
-} */
-
-/* @media (min-width: $desktop-width) {
-  .header-nav__list {
-    background-color: transparent;
-  }
-
-  .header-nav__toggle {
-    display: none;
-  }
-} */
