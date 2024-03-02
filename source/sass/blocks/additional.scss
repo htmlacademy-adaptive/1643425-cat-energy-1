@@ -1,3 +1,12 @@
+.additional__wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+
+    gap: 80px;
+    grid-template-columns: 1fr auto;
+  }
+}
+
 .additional__title {
   margin-bottom: 49px;
 
@@ -14,6 +23,16 @@
     font-size: 36px;
     line-height: 36px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+
+    grid-column: 1/2;
+  }
+}
+
+.additional__container {
+  grid-column: 1;
 }
 
 .additional__items {
@@ -159,12 +178,16 @@
     background-image: url("../img/svg/icon-gift.svg"),
       linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
       url("../img/catalog-cat-backpack-tablet.png");
-    background-position: top 59px center, top, top;
+    background-position: left 59px center, top, top;
   }
 
   @media (min-width: $desktop-width) {
+    width: 245px;
+    height: 312px;
     margin: 0;
-    padding: 172px 20px 26px;
+    padding: 185px 47px 43px;
+
+    text-align: center;
 
     background-image: url("../img/svg/icon-gift.svg"),
       linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
