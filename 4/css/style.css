@@ -269,7 +269,8 @@ img {
     display: grid;
     margin-top: 65px;
     padding-left: 90px;
-    grid-template-columns: 420px 1fr;
+    gap: 50px;
+    grid-template-columns: 420px;
   }
 }
 @media (min-width: 1260px) {
@@ -298,6 +299,7 @@ img {
     padding: 0;
     background-color: #ffffff;
     background-image: none;
+    grid-column: 1/2;
     grid-row: 1/3;
   }
 }
@@ -323,7 +325,7 @@ img {
 }
 @media (min-width: 768px) {
   .promo__text {
-    margin: 40px 0 52px;
+    margin-top: 40px;
     font-size: 20px;
     line-height: 20px;
     text-align: start;
@@ -339,7 +341,7 @@ img {
 @media (min-width: 768px) {
   .promo__image-container {
     margin: -70px auto 3px;
-    grid-column: -3/-1;
+    grid-column: 1;
     grid-row: 4/6;
   }
 }
@@ -365,12 +367,18 @@ img {
   .promo__button {
     width: 244px;
     padding: 14px 26px;
-    grid-column: 1/2;
+    grid-column: 1;
+    grid-row: 3/4;
   }
 }
 
 .prospects {
   padding-top: 20px;
+}
+@media (min-width: 1260px) {
+  .prospects {
+    padding-top: 0;
+  }
 }
 
 .prospects__list {
@@ -380,7 +388,9 @@ img {
 }
 @media (min-width: 1260px) {
   .prospects__list {
-    display: flex;
+    display: grid;
+    gap: 80px;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -400,7 +410,7 @@ img {
 }
 @media (min-width: 1260px) {
   .prospects__item {
-    padding: 159px 62px 55px 52px;
+    padding: 77px 62px 55px 52px;
     gap: 0;
   }
 }
@@ -506,7 +516,7 @@ img {
 @media (min-width: 1260px) {
   .advantages__list {
     gap: 94px;
-    grid-template-columns: repeat(3, 1fr) 250px;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -549,32 +559,26 @@ img {
   }
 }
 .advantages__item--primary::before {
-  background-image: url("../../img/svg/icon-leaf.svg");
+  background-image: url("../img/svg/icon-leaf.svg");
 }
 .advantages__item--secondary::before {
-  background-image: url("../../img/svg/icon-powder.svg");
+  background-image: url("../img/svg/icon-powder.svg");
 }
 .advantages__item--tertiary::before {
-  background-image: url("../../img/svg/icon-eat.svg");
+  background-image: url("../img/svg/icon-eat.svg");
 }
 .advantages__item--quaternary::before {
-  background-image: url("../../img/svg/icon-time.svg");
+  background-image: url("../img/svg/icon-time.svg");
 }
 
 .example {
   padding: 27px 0 40px;
   background-color: #eaeaea;
 }
-@media (min-width: 768px) {
-  .example {
-    margin-bottom: 101px;
-  }
-}
 @media (min-width: 1260px) {
   .example {
     display: grid;
     justify-content: center;
-    margin-bottom: 75px;
     padding: 0;
     gap: 224px;
     grid-template-columns: 419px 560px;
@@ -622,17 +626,15 @@ img {
   padding: 20px 0 7px;
   gap: 20px 32px;
   grid-template-columns: repeat(2, 124px);
+  /* @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  } */
 }
 @media (min-width: 768px) {
   .example__result {
     margin-bottom: 99px;
     gap: 43px;
     grid-template-columns: repeat(2, 162px);
-  }
-}
-@media (min-width: 1260px) {
-  .example__result {
-    margin-bottom: 0;
   }
 }
 
@@ -778,10 +780,11 @@ img {
 }
 @media (min-width: 1260px) {
   .map__contact {
-    position: absolute;
-    top: 95px;
+    position: relative;
     z-index: 2;
-    margin-bottom: -150px;
+    justify-content: start;
+    width: 565px;
+    margin-bottom: -250px;
     padding: 60px 78px 60px 80px;
     background-color: #ffffff;
     gap: 87px;
@@ -819,6 +822,7 @@ img {
 }
 
 .map__iframe-container {
+  position: relative;
   width: 100%;
   height: 362px;
 }
@@ -831,6 +835,12 @@ img {
 
 .map__iframe {
   height: 100%;
+}
+@media (min-width: 1260px) {
+  .map__iframe {
+    position: absolute;
+    min-width: 100%;
+  }
 }
 
 .map__iframe iframe {
@@ -1142,7 +1152,7 @@ textarea.form__input {
     display: grid;
     justify-content: center;
     gap: 60px;
-    grid-template-columns: repeat(2, 324px);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (min-width: 1260px) {
@@ -1165,6 +1175,11 @@ textarea.form__input {
 .catalog-card {
   margin: 0 -20px;
 }
+@media (min-width: 768px) {
+  .catalog-card {
+    margin: 0;
+  }
+}
 
 .catalog-card__item {
   position: relative;
@@ -1182,6 +1197,7 @@ textarea.form__input {
   .catalog-card__wrapper {
     justify-content: center;
     padding: 29px 37px 40px;
+    background-color: #ebebeb;
     grid-template-columns: 1fr;
   }
 }
@@ -1383,39 +1399,39 @@ textarea.form__input {
 }
 @media (min-width: 768px) {
   .additional__item {
-    padding: 26px 38px 28px;
-    border: 1px solid #cdcdcd;
-    gap: 25px;
+    padding: 26px 37px 28px;
+    border-bottom: none;
+    gap: 18px;
+    grid-template-columns: 1fr 150px 70px;
     grid-template-columns: repeat(3, 1fr);
   }
 }
 @media (min-width: 1260px) {
   .additional__item {
-    padding: 15px 0;
-    border-right: none;
-    border-left: none;
-    gap: 40px;
-    grid-template-columns: repeat(2, 1fr) 244px;
+    align-items: baseline;
+    padding: 17px 0 14px;
+    border: none;
+    border-top: 1px solid #cdcdcd;
+    grid-template-columns: 1fr 220px 60px 244px;
   }
+}
+.additional__item::last-child {
+  border-bottom: 1px solid #cdcdcd;
 }
 
 @media (min-width: 768px) {
   .additional__quantity {
     font-size: 16px;
     line-height: 20px;
-    grid-column: 3/4;
+    text-align: end;
+    grid-column: 2/3;
     grid-row: 1;
   }
 }
 @media (min-width: 1260px) {
   .additional__quantity {
-    align-self: center;
-    grid-column: 2/3;
+    text-align: start;
   }
-}
-
-.additional__item:last-child {
-  border-bottom: 1px solid #cdcdcd;
 }
 
 .additional__name {
@@ -1433,6 +1449,7 @@ textarea.form__input {
     align-self: center;
     font-size: 20px;
     line-height: 20px;
+    grid-column: 1/2;
     grid-row: 1;
   }
 }
@@ -1448,8 +1465,7 @@ textarea.form__input {
 }
 @media (min-width: 1260px) {
   .additional__price {
-    align-self: center;
-    grid-column: 2/3;
+    text-align: start;
   }
 }
 
@@ -1464,7 +1480,7 @@ textarea.form__input {
 }
 @media (min-width: 1260px) {
   .additional__button {
-    grid-column: 3/4;
+    grid-column: 4/5;
     grid-row: 1;
   }
 }
@@ -1484,7 +1500,7 @@ textarea.form__input {
 @media (min-width: 768px) {
   .additional__present {
     width: 707px;
-    height: 200px;
+    min-height: 200px;
     margin-bottom: 75px;
     padding: 71px 125px 69px 421px;
     text-align: start;
@@ -1495,8 +1511,7 @@ textarea.form__input {
 @media (min-width: 1260px) {
   .additional__present {
     width: 245px;
-    height: 312px;
-    margin: 0;
+    min-height: 288px;
     padding: 185px 47px 43px;
     text-align: center;
     background-image: url("../img/svg/icon-gift.svg"), linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-cat-backpack.png");
