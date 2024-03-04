@@ -1,5 +1,9 @@
 .catalog-card {
   margin: 0 -20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .catalog-card__item {
@@ -19,6 +23,8 @@
   @media (min-width: $tablet-width) {
     justify-content: center;
     padding: 29px 37px 40px;
+
+    background-color: #ebebeb;
 
     grid-template-columns: 1fr;
   }

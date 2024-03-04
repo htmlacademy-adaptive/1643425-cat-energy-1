@@ -3,14 +3,9 @@
 
   background-color: #eaeaea;
 
-  @media (min-width: $tablet-width) {
-    margin-bottom: 101px;
-  }
-
   @media (min-width: $desktop-width) {
     display: grid;
     justify-content: center;
-    margin-bottom: 75px;
     padding: 0;
 
     gap: 224px;
@@ -67,9 +62,9 @@
     grid-template-columns: repeat(2, 162px);
   }
 
-  @media (min-width: $desktop-width) {
+  /* @media (min-width: $desktop-width) {
     margin-bottom: 0;
-  }
+  } */
 }
 
 .example__item {

@@ -36,7 +36,7 @@
 
   @media (min-width: $desktop-width) {
     gap: 94px;
-    grid-template-columns: repeat(3, 1fr) 250px;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -82,18 +82,18 @@
   }
 
   &--primary::before {
-    background-image: url("../../img/svg/icon-leaf.svg");
+    background-image: url("../img/svg/icon-leaf.svg");
   }
 
   &--secondary::before {
-    background-image: url("../../img/svg/icon-powder.svg");
+    background-image: url("../img/svg/icon-powder.svg");
   }
 
   &--tertiary::before {
-    background-image: url("../../img/svg/icon-eat.svg");
+    background-image: url("../img/svg/icon-eat.svg");
   }
 
   &--quaternary::before {
-    background-image: url("../../img/svg/icon-time.svg");
+    background-image: url("../img/svg/icon-time.svg");
   }
 }

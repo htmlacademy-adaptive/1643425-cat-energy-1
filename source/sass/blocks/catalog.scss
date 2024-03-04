@@ -9,7 +9,7 @@
     justify-content: center;
 
     gap: 60px;
-    grid-template-columns: repeat(2, 324px);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   @media (min-width: $desktop-width) {
