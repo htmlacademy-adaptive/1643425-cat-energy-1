@@ -7,7 +7,7 @@
     padding-left: 90px;
 
     gap: 50px;
-    grid-template-columns: 420px;
+    grid-template-columns: 1fr;
   }
 
   @media (min-width: $desktop-width) {
@@ -53,6 +53,8 @@
   color: #ffffff;
 
   @media (min-width: $tablet-width) {
+    max-width: 420px;
+
     font-size: 60px;
     line-height: 60px;
     text-align: start;
