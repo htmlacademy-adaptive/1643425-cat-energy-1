@@ -5,6 +5,19 @@
   list-style-type: none;
 }
 
+.control--check {
+  @media (min-width: $tablet-width) {
+    display: grid;
+
+    gap: 32px 123px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 .control__item {
   margin-bottom: 19px;
 }
@@ -15,6 +28,10 @@
   font-size: 16px;
   line-height: 18px;
   font-family: $font-oswald;
-
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

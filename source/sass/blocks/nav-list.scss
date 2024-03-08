@@ -6,10 +6,18 @@
 
   background-color: #ffffff;
   border-top: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .nav-list__item {
   border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .nav-list__link {
@@ -24,4 +32,21 @@
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 16px 16px 10px;
+
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+}
+
+.page-header--background {
+  .nav-list__link {
+    @media (min-width: $desktop-width) {
+      font-size: 20px;
+      color: #ffffff;
+    }
+  }
 }
