@@ -86,13 +86,32 @@
 }
 
 .header-nav--nojs {
+  position: absolute;
+  top: 64px;
+  left: 0;
+  z-index: 5;
+
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    top: 0;
+
+    display: flex;
+    width: auto;
+  }
 }
 
 .header-nav--nojs .header-nav__list {
   position: static;
 
   display: block;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    display: flex;
+  }
 }
 
 .header-nav--nojs .header-nav__toggle {
