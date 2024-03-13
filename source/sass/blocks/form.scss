@@ -147,6 +147,8 @@
   }
 
   &--lines {
+    border-top: 2px solid #68b738;
+
     @media (min-width: $tablet-width) {
       margin-bottom: 65px;
       padding-bottom: 0;
@@ -230,14 +232,25 @@ textarea.form__input {
 }
 
 .form__legend {
+  position: relative;
+  z-index: 2;
+
+  padding-right: 20px;
+
   font-size: 24px;
   line-height: 27px;
   font-family: $font-oswald;
   color: #000000;
 
+  background-color: #ffffff;
+
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+
+    br {
+      display: none;
+    }
   }
 }
 
