@@ -1,8 +1,13 @@
 .catalog-card {
   margin: 0 -20px;
+  margin-bottom: 50px;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    margin: 0 0 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 76px;
   }
 }
 
@@ -127,7 +132,7 @@
     text-align: center;
 
     @media (min-width: $tablet-width) {
-      padding: 150px 37px 40px;
+      padding: 173px 37px 40px;
     }
   }
 }
