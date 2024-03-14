@@ -30,8 +30,36 @@
   font-family: $font-oswald;
   text-transform: uppercase;
 
+  .control__label {
+    display: grid;
+    align-items: start;
+    width: fit-content;
+
+    grid-template-columns: repeat(2, auto);
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
   }
+}
+
+.control__input {
+  width: 30px;
+  height: 30px;
+  margin: 0;
+
+  color: #000000;
+
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid #cdcdcd;
+  border-radius: 4px;
+
+  appearance: none;
+}
+
+control__input[type="checkbox"]:checked {
+  background-image: url("../../img/svg/tick.svg");
 }
