@@ -79,19 +79,18 @@
   }
 }
 
-.header-nav--nojs {
-  position: absolute;
-  top: 64px;
-  left: 0;
-  z-index: 5;
+.header-nav--open .header-nav__list {
+  display: block;
 
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.header-nav--nojs {
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    position: relative;
-    top: 0;
-
-    display: flex;
     width: auto;
   }
 }
@@ -110,8 +109,4 @@
 
 .header-nav--nojs .header-nav__toggle {
   display: none;
-}
-
-.header-nav:active + .header-nav__toggle {
-  display: block;
 }

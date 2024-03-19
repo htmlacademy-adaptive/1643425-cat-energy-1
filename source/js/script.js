@@ -1,6 +1,6 @@
 // Для проверки работы скриптов в браузере
-if (document.querySelector('.no-js')) {
-  document.querySelector('.no-js').classList.remove('no-js');
+if (document.querySelector('.header-nav--nojs')) {
+  document.querySelector('.header-nav--nojs').classList.remove('header-nav--nojs');
 }
 
 
