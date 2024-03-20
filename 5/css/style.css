@@ -163,7 +163,7 @@ img {
     z-index: -1;
     width: 50%;
     background-color: rgba(104, 183, 56, 0.85);
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/promo-cat-desktop.jpg");
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/promo-cat-desktop.jpg");
     background-repeat: repeat, no-repeat;
     object-fit: cover;
   }
@@ -330,18 +330,20 @@ img {
   transform: translate(-35%, -50%) rotate(46deg);
 }
 
+.header-nav--open .header-nav__list {
+  display: block;
+}
+@media (min-width: 768px) {
+  .header-nav--open .header-nav__list {
+    display: flex;
+  }
+}
+
 .header-nav--nojs {
-  position: absolute;
-  top: 64px;
-  left: 0;
-  z-index: 5;
   width: 100%;
 }
 @media (min-width: 768px) {
   .header-nav--nojs {
-    position: relative;
-    top: 0;
-    display: flex;
     width: auto;
   }
 }
@@ -359,10 +361,6 @@ img {
 
 .header-nav--nojs .header-nav__toggle {
   display: none;
-}
-
-.header-nav:active + .header-nav__toggle {
-  display: block;
 }
 
 .promo__wrapper {
@@ -392,7 +390,7 @@ img {
   text-align: center;
   color: #ffffff;
   background-color: rgba(104, 183, 56, 0.85);
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/promo-cat.jpg");
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/promo-cat.jpg");
   background-repeat: repeat, no-repeat;
   background-position: top;
   background-size: auto, cover;
@@ -521,36 +519,41 @@ img {
 }
 
 .prospects__item--slim {
-  background-image: url("../../img/sitting-cat.png");
+  background-image: url("../img/svg/sitting-cat.svg");
   background-position: top 21px left 20px;
 }
 @media (min-width: 768px) {
   .prospects__item--slim {
-    background-image: url("../../img/sitting-cat-tablet.png");
+    background-image: url("../img/svg/sitting-cat.svg");
     background-position: top 85px right 83px;
+    background-size: 200px 211px;
   }
 }
 @media (min-width: 1260px) {
   .prospects__item--slim {
-    background-image: url("../../img/sitting-cat-desktop.png");
+    background-image: url("../img/svg/sitting-cat.svg");
     background-position: top 40px left 55px;
+    background-size: 100px 106px;
   }
 }
 
 .prospects__item--pro {
-  background-image: url("../../img/walking-cat.png");
+  background-image: url("../img/svg/walking-cat.svg");
   background-position: top 26px left 10px;
+  background-size: 67px 50px;
 }
 @media (min-width: 768px) {
   .prospects__item--pro {
-    background-image: url("../../img/walking-cat-tablet.png");
+    background-image: url("../img/svg/walking-cat.svg");
     background-position: top 90px right 42px;
+    background-size: 268px 200px;
   }
 }
 @media (min-width: 1260px) {
   .prospects__item--pro {
-    background-image: url("../../img/walking-cat-desktop.png");
+    background-image: url("../img/svg/walking-cat.svg");
     background-position: top 43px left 34px;
+    background-size: 134px 100px;
   }
 }
 
@@ -765,15 +768,17 @@ img {
   padding: 20px 0 7px;
   gap: 20px 32px;
   grid-template-columns: repeat(2, 124px);
-  /* @media (min-width: $desktop-width) {
-    margin-bottom: 0;
-  } */
 }
 @media (min-width: 768px) {
   .example__result {
     margin-bottom: 99px;
     gap: 43px;
     grid-template-columns: repeat(2, 162px);
+  }
+}
+@media (min-width: 1260px) {
+  .example__result {
+    margin-bottom: 85px;
   }
 }
 
@@ -853,6 +858,48 @@ img {
 
 .example__value-price {
   margin: 0;
+}
+
+.slider {
+  position: relative;
+}
+
+@media (min-width: 1260px) {
+  .example__compare {
+    margin-bottom: 85px;
+  }
+}
+
+.slider__button {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  width: 4px;
+  height: 100%;
+  padding: 0;
+  background-color: #666666;
+  border: none;
+  border-radius: 2px;
+  transform: translate(50%, -50%);
+}
+
+.slider__arrow {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  color: #666666;
+  background-color: #ffffff;
+  border: 2px solid #666666;
+  border-radius: 50%;
+  transform: translate(50%, -50%);
+  fill: currentColor;
 }
 
 .slider__image-cat {
@@ -1343,7 +1390,7 @@ textarea.form__input {
 }
 
 .control__input--check[type=checkbox]:checked {
-  background-image: url("../../img/svg/tick.svg");
+  background-image: url("../img/svg/tick.svg");
 }
 
 .control__input[type=radio] {

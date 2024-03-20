@@ -17,7 +17,7 @@
           <img class="logo__image" src="img/svg/logo-mobile.svg" width="33" height="38" alt="Логотип онлайн магазина">
           <img class="logo__text" src="img/svg/logo-cat-energy.svg" width="101" height="18" alt="Название онлайн магазина">
         </a><!-- удалил классы у навигации, потому что пока не знаю как сделать переключение между ними header-nav--open header-nav--nojs при этом визуальная часть сделана -->
-        <nav class="header-nav">
+        <nav class="header-nav header-nav--nojs">
           <button class="header-nav__toggle" type="button" aria-label="Открыть меню">
             <span class="header-nav__toggle-decor"></span>
           </button>
@@ -117,9 +117,10 @@
             </div>
           </div>
           <button class="slider__button" type="button" aria-label="Бегунок">
-            <span>
-              <!-- Должна быть картинка только стрелки в формате svg -->
-
+            <span class="slider__arrow">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18">
+                <path d="M8 0 0 9l8 9V0ZM24 9l-8-9v18l8-9Z" />
+              </svg>
             </span>
           </button>
         </div>
