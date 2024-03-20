@@ -19,19 +19,71 @@
 }
 
 .control__item {
+  display: grid;
+  align-items: center;
+  width: fit-content;
   margin-bottom: 19px;
+
+  gap: 15px;
+  grid-template-columns: repeat(2, auto);
+
+  @media (min-width: $tablet-width) {
+    gap: 20px;
+  }
 }
 
 .control__label {
-  padding-left: 15px;
+  display: grid;
+  align-items: start;
+  width: fit-content;
 
   font-size: 16px;
   line-height: 18px;
   font-family: $font-oswald;
   text-transform: uppercase;
 
+  grid-template-columns: repeat(2, auto);
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
   }
+}
+
+.control__input {
+  width: 30px;
+  height: 30px;
+  margin: 0;
+
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid #cdcdcd;
+
+  appearance: none;
+}
+
+.control__input--check[type="checkbox"]:checked {
+  background-image: url("../img/svg/tick.svg");
+}
+
+.control__input[type="radio"] {
+  position: relative;
+
+  border-radius: 50%;
+}
+
+.control__input[type="radio"]:checked::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 13px;
+  height: 13px;
+
+  background-color: #68b738;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
 }

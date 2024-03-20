@@ -1,28 +1,39 @@
+.form {
+  max-width: 1260px;
+  margin: 0 auto;
+}
+
 .form form {
   overflow: hidden;
 }
 
-.form {
+.form__container {
+  max-width: 1440px;
+  padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
+}
+
+.form__fieldset-wrapper .form__fieldset {
   @media (min-width: $tablet-width) {
     padding-left: 40px;
   }
 }
 
-.form__container {
-  max-width: 1440px;
-  padding: 0;
-}
-
 .form__header {
   padding: 25px 0 17px;
-}
 
-.form__header .form__container {
-  padding: 0 20px;
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+  }
 }
 
 .form__main-title {
   margin-bottom: 37px;
+
+  text-align: start;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 54px;
@@ -73,7 +84,7 @@
   border: none;
 
   &--data {
-    padding: 23px 20px;
+    padding-top: 23px;
 
     @media (min-width: $tablet-width) {
       padding-bottom: 0;
@@ -81,7 +92,7 @@
   }
 
   &--radio {
-    padding: 23px 20px 19px;
+    padding: 23px 20px 19px 0;
 
     border-top: 1px solid #d9d9d9;
     border-bottom: 1px solid #d9d9d9;
@@ -100,7 +111,7 @@
   }
 
   &--contacts {
-    padding: 43px 20px 25px;
+    padding: 43px 20px 25px 0;
 
     @media (min-width: $tablet-width) {
       padding-top: 76px;
@@ -109,7 +120,7 @@
   }
 
   &--commit {
-    padding: 36px 20px 20px;
+    padding: 36px 20px 20px 0;
 
     @media (min-width: $tablet-width) {
       padding-top: 87px;
@@ -118,7 +129,7 @@
   }
 
   &--check {
-    padding: 32px 20px 19px;
+    padding: 32px 20px 19px 0;
 
     @media (min-width: $tablet-width) {
       padding-top: 57px;
@@ -127,11 +138,12 @@
   }
 
   &--submit {
-    padding: 15px 20px 32px;
+    padding: 15px 20px 32px 0;
 
     @media (min-width: $tablet-width) {
       display: grid;
       padding-bottom: 60px;
+      padding-left: 40px;
 
       gap: 60px;
       grid-template-columns: 284px 1fr;
@@ -147,10 +159,12 @@
   }
 
   &--lines {
+    border-top: 2px solid #68b738;
+
     @media (min-width: $tablet-width) {
       margin-bottom: 65px;
       padding-bottom: 0;
-      padding-left: 0;
+      padding-left: 40px;
     }
 
     @media (min-width: $desktop-width) {
@@ -230,19 +244,29 @@ textarea.form__input {
 }
 
 .form__legend {
+  padding-right: 20px;
+
   font-size: 24px;
   line-height: 27px;
   font-family: $font-oswald;
   color: #000000;
 
+  background-color: #ffffff;
+
   @media (min-width: $tablet-width) {
+    padding: 0 40px;
+
     font-size: 36px;
     line-height: 36px;
+
+    br {
+      display: none;
+    }
   }
 }
 
 .form__submit {
-  width: 100%;
+  width: 280px;
 }
 
 .form__note {
