@@ -13,9 +13,14 @@
     <header class="page-header page-header--background">
       <div class="page-header__container container">
         <a class="page-header__logo logo logo--header" href="index.html" aria-current="page">
-          <img class="logo__image" src="img/svg/logo-mobile.svg" width="33" height="38" alt="Логотип онлайн магазина">
+          <picture>
+            <source media="(min-width: 1260px)" srcset="img/svg/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/svg/logo-tablet.svg">
+            <img class="logo__image" src="img/svg/logo-mobile.svg" width="33" height="38" alt="Логотип онлайн магазина">
+          </picture>
           <img class="logo__text" src="img/svg/logo-cat-energy.svg" width="101" height="18" alt="Название онлайн магазина">
-        </a><!-- удалил классы у навигации, потому что пока не знаю как сделать переключение между ними header-nav--open header-nav--nojs при этом визуальная часть сделана -->
+
+        </a>
         <nav class="header-nav header-nav--nojs">
           <button class="header-nav__toggle" type="button" aria-label="Открыть меню">
             <span class="header-nav__toggle-decor"></span>
