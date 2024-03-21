@@ -28,7 +28,7 @@
           rgba(104, 183, 56, 0.85),
           rgba(104, 183, 56, 0.85)
         ),
-        url("../img/promo-cat-desktop-2@2x.jpg");
+        url("../img/promo-cat-desktop-2-@2x.jpg");
       background-size: auto, cover;
     }
   }
@@ -49,5 +49,6 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 55px;
+    padding-bottom: 32px;
   }
 }

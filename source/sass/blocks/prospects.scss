@@ -14,6 +14,7 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
+    margin-top: 82px;
 
     gap: 80px;
     grid-template-columns: repeat(2, 1fr);
@@ -47,13 +48,11 @@
   background-position: top 21px left 20px;
 
   @media (min-width: $tablet-width) {
-    background-image: url("../img/svg/sitting-cat.svg");
     background-position: top 85px right 83px;
     background-size: 200px 211px;
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../img/svg/sitting-cat.svg");
     background-position: top 40px left 55px;
     background-size: 100px 106px;
   }
@@ -65,13 +64,11 @@
   background-size: 67px 50px;
 
   @media (min-width: $tablet-width) {
-    background-image: url("../img/svg/walking-cat.svg");
     background-position: top 90px right 42px;
     background-size: 268px 200px;
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../img/svg/walking-cat.svg");
     background-position: top 43px left 34px;
     background-size: 134px 100px;
   }

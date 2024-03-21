@@ -12,7 +12,7 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    margin-bottom: 82px;
+    margin-bottom: 62px;
 
     grid-template-columns: 500px 1fr;
   }
@@ -41,7 +41,7 @@
         rgba(104, 183, 56, 0.85),
         rgba(104, 183, 56, 0.85)
       ),
-      url("../img/promo-cat-2@2x.jpg");
+      url("../img/promo-cat-2-@2x.jpg");
     background-size: auto, cover;
   }
 
@@ -93,14 +93,19 @@
   margin: -135px auto 3px;
 
   @media (min-width: $tablet-width) {
-    margin: -70px auto 3px;
+    width: 709px;
+    height: 609px;
+    margin: -132px -85px -12px;
 
     grid-column: 1;
     grid-row: 4/6;
+    object-fit: cover;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
+    width: 552px;
+    height: 499px;
+    margin: -78px -173px -24px;
 
     grid-column: 2/-1;
     grid-row: 1/5;
@@ -113,6 +118,10 @@
   height: 100%;
 
   object-fit: cover;
+
+  @media (min-width: $desktop-width) {
+    object-fit: contain;
+  }
 }
 
 .promo__button {
