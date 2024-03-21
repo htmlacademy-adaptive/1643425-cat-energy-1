@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
 </head>
 
 <body>
@@ -13,7 +16,11 @@
     <header class="page-header">
       <div class="page-header__container container">
         <a class="page-header__logo logo logo--header" href="index.html">
-          <img class="logo__image" src="img/svg/logo-mobile.svg" width="33" height="38" alt="Логотип онлайн магазина">
+          <picture>
+            <source media="(min-width: 1260px)" srcset="img/svg/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/svg/logo-tablet.svg">
+            <img class="logo__image" src="img/svg/logo-mobile.svg" width="33" height="38" alt="Логотип онлайн магазина">
+          </picture>
           <img class="logo__text" src="img/svg/logo-cat-energy.svg" width="101" height="18" alt="Название онлайн магазина">
         </a>
         <nav class="header-nav">
@@ -44,7 +51,10 @@
             <li class="catalog-card__item">
               <div class="catalog-card__wrapper">
                 <a class="catalog-card__item-link" href="#">
-                  <img class="catalog-card__image" src="img/cat-energy-pro-chiken-500.png" width="140" height="107" alt="Баночка кошачьего деликатеса со вкусом курицы">
+                  <picture>
+                    <source media="(min-width:768px)" srcset="img/cat-energy-pro-chiken-500-tablet.png 1x, img/cat-energy-pro-chiken-500-tablet-@2x.png 2x">
+                    <img class="catalog-card__image" src="img/cat-energy-pro-chiken-500.png" srcset="img/cat-energy-pro-chiken-500-@2x.png 2x" width="140" height="107" alt="Баночка кошачьего деликатеса со вкусом курицы">
+                  </picture>
                 </a>
                 <div class="catalog-card__container">
                   <a class="catalog-card__link" href="#">
@@ -71,7 +81,10 @@
             <li class="catalog-card__item">
               <div class="catalog-card__wrapper">
                 <a class="catalog-card__item-link" href="#">
-                  <img class="catalog-card__image" src="img/cat-energy-pro-chiken-1000.png" width="140" height="107" alt="Баночка кошачьего деликатеса со вкусом курицы">
+                  <picture>
+                    <source media="(min-width:768px)" srcset="img/cat-energy-pro-chiken-1000-tablet.png 1x, img/cat-energy-pro-chiken-1000-tablet-@2x.png 2x">
+                    <img class="catalog-card__image" src="img/cat-energy-pro-chiken-1000.png" srcset="img/cat-energy-pro-chiken-1000-@2x.png 2x" width="140" height="107" alt="Баночка кошачьего деликатеса со вкусом курицы">
+                  </picture>
                 </a>
                 <div class="catalog-card__container">
                   <a class="catalog-card__link" href="#">
@@ -98,7 +111,10 @@
             <li class="catalog-card__item">
               <div class="catalog-card__wrapper">
                 <a class="catalog-card__item-link" href="#">
-                  <img class="catalog-card__image" src="img/cat-energy-pro-fish-500.png" width="140" height="107" alt="Баночка кошачьего деликатеса со вкусом рыбы">
+                  <picture>
+                    <source media="(min-width:768px)" srcset="img/cat-energy-pro-fish-500-tablet.png 1x, img/cat-energy-pro-fish-500-tablet-@2x.png 2x">
+                    <img class="catalog-card__image" src="img/cat-energy-pro-fish-500.png" srcset="img/cat-energy-pro-fish-500-@2x.png 2x" width="140" height="107" alt="Баночка кошачьего деликатеса со вкусом рыбы">
+                  </picture>
                 </a>
                 <div class="catalog-card__container">
                   <a class="catalog-card__link" href="#">
@@ -125,7 +141,10 @@
             <li class="catalog-card__item">
               <div class="catalog-card__wrapper">
                 <a class="catalog-card__item-link" href="#">
-                  <img class="catalog-card__image" src="img/cat-energy-pro-fish-1000.png" width="140" height="107" alt="Баночка кошачьего деликатеса со вкусом рыбы">
+                  <picture>
+                    <source media="(min-width:768px)" srcset="img/cat-energy-pro-fish-1000-tablet.png 1x, img/cat-energy-pro-fish-1000-tablet-@2x.png 2x">
+                    <img class="catalog-card__image" src="img/cat-energy-pro-fish-1000.png" srcset="img/cat-energy-pro-fish-1000-@2x.png 2x" width="140" height="107" alt="Баночка кошачьего деликатеса со вкусом рыбы">
+                  </picture>
                 </a>
                 <div class="catalog-card__container">
                   <a class="catalog-card__link" href="#">
@@ -154,7 +173,11 @@
             <li class="catalog-card__item">
               <div class="catalog-card__wrapper">
                 <a class="catalog-card__item-link" href="#">
-                  <img class="catalog-card__image" src="img/cat-energy-slim-buckwheat-500.png" width="140" height="107" alt="Баночка кошачьего деликатеса со вкусом гречки">
+                  <picture>
+                    <source media="(min-width:768px)" srcset="img/cat-energy-slim-buckwheat-500-tablet.png 1x, img/cat-energy-slim-buckwheat-500-tablet-@2x.png 2x">
+                    <img class="catalog-card__image" src="img/cat-energy-slim-buckwheat-500.png" srcset="img/cat-energy-slim-buckwheat-500-@2x.png 2x" width="140" height="107" alt="Баночка кошачьего деликатеса со вкусом гречки">
+                  </picture>
+
                 </a>
                 <div class="catalog-card__container">
                   <a class="catalog-card__link" href="#">
@@ -182,7 +205,11 @@
             <li class="catalog-card__item">
               <div class="catalog-card__wrapper">
                 <a class="catalog-card__item-link" href="#">
-                  <img class="catalog-card__image" src="img/cat-energy-slim-buckwheat-1000.png" width="140" height="107" alt="Баночка кошачьего деликатеса со вкусом гречки">
+                  <picture>
+                    <source media="(min-width:768px)" srcset="img/cat-energy-slim-buckwheat-1000-tablet.png 1x, img/cat-energy-slim-buckwheat-1000-tablet-@2x.png 2x">
+                    <img class="catalog-card__image" src="img/cat-energy-slim-buckwheat-1000.png" srcset="img/cat-energy-slim-buckwheat-1000-@2x.png 2x" width="140" height="107" alt="Баночка кошачьего деликатеса со вкусом гречки">
+                  </picture>
+
                 </a>
                 <div class="catalog-card__container">
                   <a class="catalog-card__link" href="#">
@@ -210,7 +237,10 @@
             <li class="catalog-card__item">
               <div class="catalog-card__wrapper">
                 <a class="catalog-card__item-link" href="#">
-                  <img class="catalog-card__image" src="img/cat-energy-slim-rice-500.png" width="140" height="107" alt="Баночка кошачьего деликатеса со вкусом риса">
+                  <picture>
+                    <source media="(min-width:768px)" srcset="img/cat-energy-slim-rice-500-tablet.png 1x, img/cat-energy-slim-rice-500-tablet-@2x.png 2x">
+                    <img class="catalog-card__image" src="img/cat-energy-slim-rice-500.png" srcset="img/cat-energy-slim-rice-500-@2x.png 2x" width="140" height="107" alt="Баночка кошачьего деликатеса со вкусом риса">
+                  </picture>
                 </a>
                 <div class="catalog-card__container">
                   <a class="catalog-card__link" href="#">

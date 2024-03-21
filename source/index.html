@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
 </head>
 
 <body>
@@ -13,9 +16,14 @@
     <header class="page-header page-header--background">
       <div class="page-header__container container">
         <a class="page-header__logo logo logo--header" href="index.html" aria-current="page">
-          <img class="logo__image" src="img/svg/logo-mobile.svg" width="33" height="38" alt="Логотип онлайн магазина">
+          <picture>
+            <source media="(min-width: 1260px)" srcset="img/svg/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/svg/logo-tablet.svg">
+            <img class="logo__image" src="img/svg/logo-mobile.svg" width="33" height="38" alt="Логотип онлайн магазина">
+          </picture>
           <img class="logo__text" src="img/svg/logo-cat-energy.svg" width="101" height="18" alt="Название онлайн магазина">
-        </a><!-- удалил классы у навигации, потому что пока не знаю как сделать переключение между ними header-nav--open header-nav--nojs при этом визуальная часть сделана -->
+
+        </a>
         <nav class="header-nav header-nav--nojs">
           <button class="header-nav__toggle" type="button" aria-label="Открыть меню">
             <span class="header-nav__toggle-decor"></span>
@@ -41,9 +49,14 @@
             <p class="promo__text promo__text--subtitle">Занялся собой? Займись котом!</p>
           </div>
           <div class="promo__image-container">
-            <img class="promo__image" src="img/index-cat-chiken.png" width="280" height="270" alt="Оранжевая банка Cat Energy со вкусом курицы">
+            <picture>
+              <source media="(min-width:1260px)" srcset="img/index-cat-chiken-desktop.png 1x, img/index-cat-chiken-desktop-@2x.png 2x">
+              <source media="(min-width:768px)" srcset="img/index-cat-chiken-tablet.png 1x, img/index-cat-chiken-tablet-@2x.png 2x">
+              <img class="promo__image" src="img/index-cat-chiken.png" srcset="img/index-cat-chiken-@2x.png 2x" width="280" height="270" alt="Оранжевая банка Cat Energy со вкусом курицы">
           </div>
           <a class="promo__button button" href="form.html">подобрать программу</a>
+
+          </picture>
         </div>
       </section>
 
@@ -109,10 +122,18 @@
         <div class="example__compare slider">
           <div class="slider__container">
             <div class="slider__image slider__image--before">
-              <img class="slider__image-cat" src="img/chubby-cat.png" alt="Пухлый кот" width="280" height="256">
+              <picture>
+                <source media="(min-width:768px)" srcset="img/chubby-cat-tablet.png 1x, img/chubby-cat-tablet-@2x.png 2x" width="560" height="512">
+                <img class="slider__image-cat" src="img/chubby-cat.png" srcset="img/chubby-cat-@2x.png 2x" alt="Пухлый кот" width="280" height="256">
+              </picture>
             </div>
             <div class="slider__image slider__image--after">
-              <img class="slider__image-cat visually-hidden" src="img/skinny-cat.png" alt="Худой кот" width="280" height="256"><!-- это временно, чтобы сделать верстку -->
+              <picture>
+                <source media="(min-width:768px)" srcset="img/skinny-cat-tablet.png 1x, img/skinny-cat-tablet-@2x.png 2x" width="560" height="512">
+                <img class="slider__image-cat visually-hidden" src="img/skinny-cat.png" srcset="img/skinny-cat-@2x.png 2x" alt="Худой кот" width="280" height="256">
+              </picture>
+              <!-- это временно, чтобы сделать верстку -->
+
             </div>
           </div>
           <button class="slider__button" type="button" aria-label="Бегунок">
