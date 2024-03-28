@@ -1,20 +1,52 @@
 .logo {
   display: block;
+  width: fit-content;
 
+  color: #111111;
   text-decoration: none;
+
+  --color-text: #111111;
+  fill: currentColor;
 
   &--header {
     display: grid;
     align-items: center;
 
+    color: #444444;
     column-gap: 56px;
 
     grid-template-columns: auto 1fr;
+
+    @media (min-width: $tablet-width) {
+      column-gap: 13px;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 
   &--footer {
     width: 128px;
     height: 24px;
+
+    &:hover,
+    &:focus {
+      color: #3e3e3e;
+
+      --color-text: #3e3e3e;
+    }
+
+    &:active {
+      color: #6b6b6b;
+
+      --color-text: #6b6b6b;
+    }
   }
 }
 
@@ -22,6 +54,16 @@
   display: block;
   width: 33px;
   height: 38px;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 70px;
+    height: 59px;
+  }
 }
 
 .logo__text {
@@ -29,55 +71,8 @@
   width: 101px;
   height: 18px;
 
-  color: #111111;
-
-  --color-logo-text: #111111;
-
-  @media (min-width: $tablet-width) {
-    --color-logo-text: #444444;
-    fill: #111111;
-  }
-
   @media (min-width: $desktop-width) {
     width: 118px;
     height: 21px;
-  }
-}
-
-.logo--header {
-  &:hover,
-  &:focus {
-    opacity: 0.8;
-  }
-
-  &:active {
-    opacity: 0.6;
-  }
-
-  @media (min-width: $tablet-width) {
-    column-gap: 13px;
-  }
-}
-
-.logo__text-footer {
-  width: 128px;
-  height: 24px;
-
-  color: #111111;
-
-  --color-logo-text: #111111;
-  fill: currentColor;
-
-  &:hover,
-  &:focus {
-    color: #3e3e3e;
-
-    --color-logo-text: #3e3e3e;
-  }
-
-  &:active {
-    color: #6b6b6b;
-
-    --color-logo-text: #6b6b6b;
   }
 }
