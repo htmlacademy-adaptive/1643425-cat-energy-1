@@ -11,7 +11,21 @@
 
   fill: #666666;
 
+  &:hover,
+  &:focus {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     gap: 23px;
+  }
+
+  span,
+  svg {
+    flex-shrink: 0;
   }
 }

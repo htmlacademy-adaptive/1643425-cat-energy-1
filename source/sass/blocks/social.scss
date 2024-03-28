@@ -20,4 +20,13 @@
   color: #666666;
 
   fill: currentColor;
+
+  &:hover,
+  &:focus {
+    color: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

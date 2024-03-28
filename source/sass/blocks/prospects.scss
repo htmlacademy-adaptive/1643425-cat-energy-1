@@ -131,6 +131,35 @@
   text-transform: uppercase;
   text-decoration: none;
 
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: calc(100% - 32px);
+
+    width: 24px;
+    height: 12px;
+
+    background-image: url("../img/svg/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 32px 12px;
+    transform: translateY(-50%);
+
+    transition: width 0.3s ease;
+  }
+
+  &:hover,
+  &:focus {
+    &::after {
+      width: 32px;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
