@@ -23,4 +23,9 @@
   @media (min-width: $tablet-width) {
     gap: 23px;
   }
+
+  span,
+  svg {
+    flex-shrink: 0;
+  }
 }
