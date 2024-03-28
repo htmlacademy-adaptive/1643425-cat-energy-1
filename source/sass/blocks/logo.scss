@@ -29,27 +29,35 @@
   width: 101px;
   height: 18px;
 
+  color: #111111;
+
+  --color-logo-text: #111111;
+
+  @media (min-width: $tablet-width) {
+    --color-logo-text: #444444;
+    fill: #111111;
+  }
+
   @media (min-width: $desktop-width) {
     width: 118px;
     height: 21px;
   }
 }
 
-@media (min-width: $tablet-width) {
-  .logo--header {
+.logo--header {
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media (min-width: $tablet-width) {
     column-gap: 13px;
   }
 }
-
-/* .logo-color {
-  fill: tomato;
-}
-
-.logo__text-footer [href] {
-  color: #fff;
-
-  fill: currentColor;
-} */
 
 .logo__text-footer {
   width: 128px;
@@ -57,15 +65,19 @@
 
   color: #111111;
 
-  fill: none;
+  --color-logo-text: #111111;
   fill: currentColor;
 
   &:hover,
   &:focus {
     color: #3e3e3e;
+
+    --color-logo-text: #3e3e3e;
   }
 
   &:active {
     color: #6b6b6b;
+
+    --color-logo-text: #6b6b6b;
   }
 }

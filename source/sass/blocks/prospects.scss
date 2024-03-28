@@ -131,6 +131,24 @@
   text-transform: uppercase;
   text-decoration: none;
 
+  background-image: url("../img/svg/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 24px 12px;
+
+  transition: 0.3s;
+
+  &:hover,
+  &:focus {
+    background-size: 32px 10px;
+
+    transition: 0.3s;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
