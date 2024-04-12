@@ -13,12 +13,12 @@
   background-color: #68b738;
   border: none;
 
-  &:hover,
-  &:focus {
+  &:hover:not(.catalog-card__button--empty),
+  &:focus:not(.catalog-card__button--empty) {
     background-color: #5eaa2f;
   }
 
-  &:active {
+  &:active:not(.catalog-card__button--empty) {
     color: rgba(255, 255, 255, 0.3);
   }
 
