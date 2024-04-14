@@ -1,5 +1,5 @@
 .prospects {
-  padding-top: 20px;
+  padding-top: 12px;
 
   @media (min-width: $desktop-width) {
     padding-top: 0;
@@ -30,10 +30,10 @@
   background-color: #f2f2f2;
   background-repeat: no-repeat;
 
-  gap: 19px;
+  gap: 22px;
 
   @media (min-width: $tablet-width) {
-    padding: 77px 332px 100px 52px;
+    padding: 77px 332px 92px 52px;
   }
 
   @media (min-width: $desktop-width) {
@@ -48,8 +48,8 @@
   background-position: top 21px left 20px;
 
   @media (min-width: $tablet-width) {
-    background-position: top 85px right 83px;
-    background-size: 200px 211px;
+    background-position: top 81px right 83px;
+    background-size: 200px 226px;
   }
 
   @media (min-width: $desktop-width) {
@@ -64,8 +64,8 @@
   background-size: 67px 50px;
 
   @media (min-width: $tablet-width) {
-    background-position: top 90px right 42px;
-    background-size: 268px 200px;
+    background-position: top 90px right 48px;
+    background-size: 269px 201px;
   }
 
   @media (min-width: $desktop-width) {

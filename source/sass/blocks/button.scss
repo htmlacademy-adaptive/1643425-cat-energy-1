@@ -12,6 +12,7 @@
 
   background-color: #68b738;
   border: none;
+  cursor: pointer;
 
   &:hover:not(.catalog-card__button--empty),
   &:focus:not(.catalog-card__button--empty) {

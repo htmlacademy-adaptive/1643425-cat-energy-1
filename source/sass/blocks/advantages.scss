@@ -1,5 +1,5 @@
 .advantages {
-  padding: 20px 0 49px;
+  padding: 14px 0 49px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 149px;
@@ -14,7 +14,7 @@
   margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 72px;
+    margin-bottom: 70px;
 
     text-align: start;
   }
@@ -30,7 +30,7 @@
   gap: 20px;
 
   @media (min-width: $tablet-width) {
-    gap: 100px 179px;
+    gap: 133px 39px;
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -50,11 +50,19 @@
   line-height: 18px;
   color: #444444;
 
+  br {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
-    padding: 111px 50px 0 0;
+    padding: 111px 76px 0 0;
 
     font-size: 16px;
     line-height: 24px;
+
+    br {
+      display: block;
+    }
   }
 
   @media (min-width: $desktop-width) {

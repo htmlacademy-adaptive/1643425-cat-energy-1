@@ -251,9 +251,6 @@
   }
 }
 
-/* .form__input--mail {
-  position: relative;
-} */
 .form__input-container--mail {
   position: relative;
 }
@@ -262,7 +259,6 @@
   content: "";
   position: absolute;
   top: 50%;
-  /* background-position: left; */
   right: 12px;
 
   width: 19px;
@@ -274,6 +270,47 @@
   mask-image: url("../img/svg/mail.svg");
   mask-position: center;
   mask-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    right: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 17px;
+  }
+}
+
+/* .form__input-container--mail:focus::after {
+  background-color: #68b738;
+} */
+
+.form__group-item--phone {
+  position: relative;
+}
+
+.form__group-item--phone::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 15px;
+
+  width: 16px;
+  height: 16px;
+
+  background-color: #000000;
+  transform: translateY(-50%);
+
+  mask-image: url("../img/svg/phone.svg");
+  mask-position: center;
+  mask-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    right: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 17px;
+  }
 }
 
 textarea.form__input {
