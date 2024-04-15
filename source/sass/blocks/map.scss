@@ -23,7 +23,7 @@
   grid-template-columns: 1fr 1fr;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 80px 59px;
+    padding: 157px 60px 59px 40px;
 
     gap: 10px 250px;
   }
@@ -68,6 +68,17 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+  }
+}
+
+.map__city {
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding-top: 20px;
   }
 }
 

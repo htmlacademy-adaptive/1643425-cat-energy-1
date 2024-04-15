@@ -14,7 +14,7 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    margin-top: 82px;
+    margin-top: 95px;
 
     gap: 80px;
     grid-template-columns: repeat(2, 1fr);
@@ -37,7 +37,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 77px 62px 55px 52px;
+    padding: 77px 62px 63px 52px;
 
     gap: 0;
   }
@@ -53,8 +53,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-position: top 40px left 55px;
-    background-size: 100px 106px;
+    background-position: top 41px left 52px;
+    background-size: 100px 114px;
   }
 }
 
@@ -69,8 +69,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-position: top 43px left 34px;
-    background-size: 134px 100px;
+    background-position: top 45px left 34px;
+    background-size: 134px 102px;
   }
 }
 
@@ -100,7 +100,7 @@
 
 .prospects__item-text {
   margin: 0;
-  padding-bottom: 38px;
+  padding-bottom: 33px;
 
   font-size: 14px;
   line-height: 18px;
@@ -130,6 +130,10 @@
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
+
+  @media (min-width: $desktop-width) {
+    padding-right: 59px;
+  }
 
   &::after {
     content: "";

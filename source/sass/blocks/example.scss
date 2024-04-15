@@ -4,10 +4,11 @@
   @media (min-width: $desktop-width) {
     display: grid;
     justify-content: center;
+    margin-left: -19px;
     padding: 0;
 
-    gap: 224px;
-    grid-template-columns: 419px 560px;
+    gap: 210px;
+    grid-template-columns: 472px 560px;
   }
 }
 
@@ -42,6 +43,7 @@
 
   @media (min-width: $desktop-width) {
     display: block;
+    margin-bottom: 50px;
   }
 }
 
@@ -61,7 +63,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 85px;
+    margin-bottom: 55px;
+
+    gap: 49px 43px;
   }
 }
 
@@ -107,8 +111,9 @@
 
     @media (min-width: $desktop-width) {
       flex-direction: row;
+      padding-left: 0;
 
-      gap: 63px;
+      gap: 66px;
       grid-column: 1 / 3;
       justify-self: start;
     }

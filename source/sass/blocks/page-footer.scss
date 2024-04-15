@@ -10,16 +10,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 55px;
+    padding-top: 45px;
     padding-bottom: 55px;
   }
 }
 
 .page-footer__logo {
-  margin: 0 auto 19px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto 19px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -35,7 +35,7 @@
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
-    margin: 0 auto;
+    margin: 0 126px 0 161px;
 
     border: none;
   }
