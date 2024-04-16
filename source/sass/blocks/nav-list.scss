@@ -26,9 +26,9 @@
       &::after {
         content: "";
         position: absolute;
-        right: 3px;
+        right: 24px;
         bottom: 0;
-        left: 34px;
+        left: 9px;
 
         height: 2px;
 
@@ -60,7 +60,7 @@
   text-decoration: none;
 
   @media (min-width: $tablet-width) {
-    padding: 12px 2px 9px 31px;
+    padding: 12px 25px 9px 9px;
 
     font-size: 18px;
     line-height: 24px;

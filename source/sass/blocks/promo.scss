@@ -4,7 +4,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     margin-top: 65px;
-    padding-left: 100px;
+    padding-left: 109px;
 
     gap: 50px;
     grid-template-columns: 1fr;
@@ -84,6 +84,7 @@
   @media (min-width: $tablet-width) {
     margin-top: 40px;
     margin-bottom: 0;
+    padding: 0;
 
     font-size: 20px;
     line-height: 20px;
