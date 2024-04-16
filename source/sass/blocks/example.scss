@@ -13,7 +13,9 @@
 }
 
 .example__title {
-  margin-bottom: 40px;
+  padding: 25px 0 40px;
+
+  text-align: start;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 63px;

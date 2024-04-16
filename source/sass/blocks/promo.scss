@@ -21,7 +21,7 @@
 
 .promo__description {
   margin: 0 -20px;
-  padding: 26px 0 164px;
+  padding: 29px 0 164px;
 
   font-family: $font-oswald;
   text-align: center;
@@ -73,6 +73,9 @@
 }
 
 .promo__text {
+  margin: 0;
+  padding-top: 25px;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;

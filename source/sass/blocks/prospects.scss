@@ -1,5 +1,5 @@
 .prospects {
-  padding-top: 12px;
+  padding-top: 20px;
 
   @media (min-width: $desktop-width) {
     padding-top: 0;
@@ -25,12 +25,12 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 30px 20px 22px;
+  padding: 30px 20px 42px;
 
   background-color: #f2f2f2;
   background-repeat: no-repeat;
 
-  gap: 22px;
+  gap: 20px;
 
   @media (min-width: $tablet-width) {
     padding: 77px 332px 92px 52px;
@@ -100,7 +100,7 @@
 
 .prospects__item-text {
   margin: 0;
-  padding-bottom: 33px;
+  padding-bottom: 20px;
 
   font-size: 14px;
   line-height: 18px;
