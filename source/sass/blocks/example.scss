@@ -52,7 +52,7 @@
 .example__result {
   display: grid;
   margin: 0;
-  padding: 20px 0 7px;
+  padding: 0;
 
   gap: 20px 32px;
   grid-template-columns: repeat(2, 124px);
@@ -85,7 +85,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-top: 7px;
+    padding-top: 14px;
+    padding-bottom: 20px;
 
     font-size: 14px;
     line-height: 20px;
