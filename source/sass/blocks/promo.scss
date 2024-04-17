@@ -13,6 +13,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     margin-bottom: 62px;
+    padding-left: 100px;
 
     gap: 53px 40px;
     grid-template-columns: 500px 1fr;
@@ -90,6 +91,10 @@
     line-height: 20px;
     text-align: start;
     color: #000000;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 43px;
   }
 }
 

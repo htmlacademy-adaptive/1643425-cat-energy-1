@@ -2,10 +2,6 @@
   position: relative;
 }
 
-.slider__container {
-  padding-bottom: 40px;
-}
-
 .slider__image-cat {
   display: block;
   margin: 0 auto;
@@ -14,16 +10,16 @@
 .slider__button {
   position: absolute;
   top: 0;
-  right: 50%;
+  left: 50%;
 
   width: 4px;
-  min-height: 256px;
+  height: 100%;
   padding: 0;
 
   background-color: #666666;
   border: none;
   border-radius: 2px;
-  transform: translateX(50%);
+  transform: translateX(-50%);
 
   &:hover,
   &:focus,

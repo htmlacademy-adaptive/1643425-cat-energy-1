@@ -18,12 +18,12 @@
 
 .map__contact {
   display: grid;
-  padding: 26px 0;
+  padding: 68px 0 26px 0;
 
   grid-template-columns: 1fr 1fr;
 
   @media (min-width: $tablet-width) {
-    padding: 157px 60px 59px 40px;
+    padding: 163px 60px 59px 40px;
 
     gap: 10px 250px;
   }

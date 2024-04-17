@@ -16,13 +16,14 @@
   text-align: start;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 70px;
+    margin-top: 13px;
+    margin-bottom: 72px;
 
     text-align: start;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 58px;
+    margin-top: 71px;
   }
 }
 
