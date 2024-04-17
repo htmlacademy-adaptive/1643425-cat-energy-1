@@ -9,13 +9,13 @@
   }
 }
 
-.additional {
+/* .additional {
   padding-top: 26px;
-}
+} */
 
 .additional__title {
   width: fit-content;
-  margin: -18px 0 49px -20px;
+  margin: -18px 0 36px -20px;
   padding: 0 20px;
 
   font-weight: 400;
@@ -141,6 +141,8 @@
 }
 
 .additional__button {
+  padding: 8px;
+
   grid-column: 1/-1;
 
   @media (min-width: $desktop-width) {
@@ -150,7 +152,7 @@
 
 .additional__present {
   margin: 0;
-  padding: 172px 20px 26px;
+  padding: 187px 46px 37px;
 
   font-size: 16px;
   line-height: 20px;
