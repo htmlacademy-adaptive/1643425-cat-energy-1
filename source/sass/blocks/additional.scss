@@ -27,9 +27,7 @@
   background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
-    /* margin-top: 0;
-    margin-bottom: 80px; */
-    margin: -23px 0 49px 0;
+    margin: -23px 0 80px;
     padding: 0 40px;
 
     font-size: 36px;
@@ -71,7 +69,7 @@
     border: 1px solid #cdcdcd;
     border-bottom: none;
 
-    gap: 18px;
+    gap: 24px;
     grid-template-columns: 1fr 150px 70px;
   }
 
@@ -91,6 +89,10 @@
 }
 
 .additional__quantity {
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
+
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
@@ -123,6 +125,10 @@
 }
 
 .additional__price {
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
+
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
@@ -134,16 +140,17 @@
   }
 }
 
-.additional__item span {
-  font-size: 14px;
-  line-height: 14px;
-  color: #444444;
-}
-
 .additional__button {
   padding: 8px;
 
   grid-column: 1/-1;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px;
+
+    font-size: 16px;
+    line-height: 20px;
+  }
 
   @media (min-width: $desktop-width) {
     grid-column: auto;
@@ -176,7 +183,7 @@
     background-image: url("../img/svg/icon-gift.svg"),
       linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
       url("../img/catalog-cat-backpack-tablet.png");
-    background-position: left 59px center, top, top;
+    background-position: left 79px center, top, top;
   }
 
   @media (min-width: $desktop-width) {
