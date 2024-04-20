@@ -280,9 +280,9 @@
   }
 }
 
-/* .form__input-container--mail:focus::after {
+.form__input-container:focus-within::after {
   background-color: #68b738;
-} */
+}
 
 .form__group-item--phone {
   position: relative;

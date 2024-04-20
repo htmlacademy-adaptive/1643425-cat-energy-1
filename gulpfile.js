@@ -8,9 +8,10 @@ import rename from 'gulp-rename';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
-import svgstore from 'gulp-svgstore';
+/* import svgstore from 'gulp-svgstore'; */
 import del from 'del';
 import browser from 'browser-sync';
+import { stacksvg } from "gulp-stacksvg"
 
 // Styles
 
@@ -72,7 +73,7 @@ const svg = () =>
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
 
-const sprite = () => {
+/* const sprite = () => {
   return gulp.src('source/img/svg/*.svg')
     .pipe(svgo())
     .pipe(svgstore({
@@ -80,8 +81,14 @@ const sprite = () => {
     }))
     .pipe(rename('sprite.svg'))
     .pipe(gulp.dest('build/img'));
-}
+} */
+const { src, dest } = gulp
 
+function makeStack() {
+  return src('source/img/svg/*.svg')
+    .pipe(stacksvg({ output: `sprite.svg` }))
+    .pipe(dest(`build/img`))
+}
 // Copy
 
 const copy = (done) => {
