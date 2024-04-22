@@ -284,11 +284,15 @@
   background-color: #68b738;
 }
 
+.form__input-container--error:focus-within::after {
+  background-color: #ff8282;
+}
+
 .form__group-item--phone {
   position: relative;
 }
 
-.form__group-item--phone::after {
+.form__input-container--phone::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -300,7 +304,7 @@
   background-color: #000000;
   transform: translateY(-50%);
 
-  mask-image: url("../img/svg/phone.svg");
+  mask-image: url("../img/sprite.svg#phone");
   mask-position: center;
   mask-repeat: no-repeat;
 

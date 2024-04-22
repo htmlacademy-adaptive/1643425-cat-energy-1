@@ -1,5 +1,13 @@
 .slider {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 88px;
+  }
 }
 
 .slider__image-cat {
