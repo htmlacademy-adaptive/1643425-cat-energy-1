@@ -3,6 +3,7 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
+    margin-bottom: 17px;
 
     gap: 80px;
     grid-template-columns: 1fr auto;
@@ -188,8 +189,8 @@
 
   @media (min-width: $desktop-width) {
     width: 245px;
-    max-height: 311px;
-    padding: 185px 47px 43px;
+    max-height: 288px;
+    padding: 185px 41px 43px;
 
     text-align: center;
 
