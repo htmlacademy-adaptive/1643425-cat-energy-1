@@ -21,7 +21,7 @@
   padding: 25px 0 16px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 40px;
+    padding-left: 69px;
   }
 }
 
@@ -32,6 +32,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 54px;
+    padding-top: 41px;
   }
 }
 
@@ -82,7 +83,7 @@
   border-top: 1px solid #d9d9d9;
 
   &--data {
-    padding: 23px 40px 23px 20px;
+    padding: 23px 21px 23px 20px;
 
     @media (min-width: $tablet-width) {
       padding: 21px 70px 20px;
@@ -94,7 +95,8 @@
   }
 
   &--radio {
-    padding: 21px 34px 18px 20px;
+    margin-bottom: 26px;
+    padding: 21px 34px 4px 20px;
 
     border-top: 1px solid #d9d9d9;
     border-bottom: 1px solid #d9d9d9;
@@ -111,7 +113,7 @@
   }
 
   &--contacts {
-    padding: 43px 20px 25px;
+    padding: 34px 20px 25px;
 
     @media (min-width: $tablet-width) {
       padding: 71px 70px 70px;
@@ -135,7 +137,7 @@
   }
 
   &--check {
-    padding: 32px 20px 19px;
+    padding: 32px 20px 5px;
 
     @media (min-width: $tablet-width) {
       padding: 53px 70px 17px;
@@ -168,6 +170,10 @@
   &--lines {
     border-top: 2px solid #68b738;
   }
+}
+
+.form__fieldset:last-child {
+  border-top: none;
 }
 
 .form__group {
@@ -351,6 +357,8 @@ textarea.form__input {
 
 .form__submit {
   width: 280px;
+  margin-bottom: 14px;
+  padding: 8px;
 }
 
 .form__note {
