@@ -9,7 +9,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
 
-    gap: 32px 123px;
+    gap: 14px 89px;
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -26,6 +26,10 @@
 
   gap: 15px;
   grid-template-columns: repeat(2, auto);
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 13px;
+  }
 
   &:disabled {
     opacity: 0.3;
@@ -73,6 +77,11 @@
   border: 1px solid #cdcdcd;
 
   appearance: none;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .control__input--check[type="checkbox"]:checked {
