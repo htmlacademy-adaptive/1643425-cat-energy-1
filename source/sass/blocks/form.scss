@@ -1,10 +1,11 @@
-/* .form form {
+.form form {
   overflow: hidden;
-} */
+}
 
 .form__container {
-  /* max-width: 1440px; */
-  padding-left: 20px;
+  max-width: 1440px;
+
+  /* padding-left: 20px; */
 
   @media (min-width: $tablet-width) {
     padding-left: 0;
@@ -17,7 +18,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 79px;
+    padding-left: 0;
   }
 }
 
@@ -31,8 +32,8 @@
   @media (min-width: $desktop-width) {
     max-width: 1260px;
     margin: 0 auto;
-    padding-bottom: 47px;
-    padding-left: 18px;
+    padding-bottom: 43px;
+    padding-left: 19px;
   }
 }
 
@@ -47,6 +48,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 58px;
     padding-top: 6px;
   }
 }
@@ -77,6 +79,7 @@
     display: grid;
     align-items: center;
     margin-bottom: 57px;
+    margin-left: 79px;
 
     gap: 137px;
     grid-template-columns: repeat(2, 570px);
@@ -102,6 +105,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-left: 30px;
+
     border-top: none;
   }
 
@@ -113,7 +118,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding: 21px 0;
+      padding: 25px 0 21px;
     }
   }
 
@@ -145,7 +150,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding: 72px 110px 75px;
+      margin-left: 3px;
+      padding: 67px 94px 73px 107px;
     }
   }
 
@@ -194,9 +200,9 @@
     }
   }
 
-  /* &--lines {
+  &--lines {
     border-top: 2px solid #68b738;
-  } */
+  }
 }
 
 .form__fieldset:last-child {
@@ -218,7 +224,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
 
-    gap: 80px;
+    gap: 77px;
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -229,6 +235,10 @@
 
   gap: 14px;
   grid-template-columns: max-content 1fr;
+
+  @media (min-width: $desktop-width) {
+    gap: 13px;
+  }
 }
 
 .form__label {
