@@ -9,11 +9,12 @@
   @media (min-width: $tablet-width) {
     display: grid;
 
-    gap: 32px 123px;
+    gap: 16px 107px;
     grid-template-columns: repeat(2, 1fr);
   }
 
   @media (min-width: $desktop-width) {
+    gap: 14px 96px;
     grid-template-columns: repeat(4, 1fr);
   }
 }
@@ -22,10 +23,20 @@
   display: grid;
   align-items: center;
   width: fit-content;
-  margin-bottom: 19px;
+  margin-bottom: 13px;
 
   gap: 15px;
   grid-template-columns: repeat(2, auto);
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 13px;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+
+    pointer-events: none;
+  }
 
   @media (min-width: $tablet-width) {
     gap: 20px;
@@ -50,6 +61,12 @@
   }
 }
 
+.control__label:disabled ~ .control__input {
+  opacity: 0.3;
+
+  pointer-events: none;
+}
+
 .control__input {
   width: 30px;
   height: 30px;
@@ -61,6 +78,11 @@
   border: 1px solid #cdcdcd;
 
   appearance: none;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .control__input--check[type="checkbox"]:checked {

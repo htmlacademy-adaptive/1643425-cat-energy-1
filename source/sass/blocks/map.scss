@@ -18,15 +18,23 @@
 
 .map__contact {
   display: grid;
-  padding: 26px 0;
+  padding: 68px 0 26px 0;
 
   grid-template-columns: 1fr 1fr;
 
+  &-position {
+    padding-top: 27px;
+  }
+
   @media (min-width: $tablet-width) {
-    padding: 60px 80px 59px;
+    padding: 103px 39px 59px 40px;
 
     gap: 10px 250px;
   }
+
+  /* .map__contact-position {
+    padding-top: 27px;
+  } */
 
   @media (min-width: $desktop-width) {
     position: relative;
@@ -68,6 +76,17 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+  }
+}
+
+.map__city {
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding-top: 20px;
   }
 }
 

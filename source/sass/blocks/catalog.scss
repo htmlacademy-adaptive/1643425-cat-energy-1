@@ -8,7 +8,7 @@
     display: grid;
     justify-content: center;
 
-    gap: 60px;
+    gap: 60px 60px;
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -19,10 +19,17 @@
 }
 
 .catalog__title {
+  margin-top: 28px;
   margin-bottom: 41px;
+
+  text-align: start;
 
   @media (min-width: $tablet-width) {
     margin-top: 65px;
-    margin-bottom: 84px;
+    margin-bottom: 86px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 35px;
   }
 }
