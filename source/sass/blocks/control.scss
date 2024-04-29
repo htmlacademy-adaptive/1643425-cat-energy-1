@@ -9,12 +9,12 @@
   @media (min-width: $tablet-width) {
     display: grid;
 
-    gap: 16px 107px;
+    gap: 19px 75px;
     grid-template-columns: repeat(2, 1fr);
   }
 
   @media (min-width: $desktop-width) {
-    gap: 14px 96px;
+    gap: 14px 82px;
     grid-template-columns: repeat(4, 1fr);
   }
 }
