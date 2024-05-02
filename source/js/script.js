@@ -12,3 +12,4 @@ menuBtn.addEventListener('click', (evt) => {
   evt.preventDefault();
   menu.classList.toggle('header-nav--open');
 });
+
