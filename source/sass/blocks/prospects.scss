@@ -2,11 +2,11 @@
   padding-top: 20px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 12px;
+    padding-top: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 0;
+    padding-top: 82px 0 26px;
   }
 }
 
@@ -18,7 +18,6 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    margin-top: 95px;
 
     gap: 80px;
     grid-template-columns: repeat(2, 1fr);
@@ -29,7 +28,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 29px 20px 42px;
+  padding: 29px 20px 21px;
 
   background-color: #f2f2f2;
   background-repeat: no-repeat;
@@ -37,15 +36,28 @@
   gap: 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 77px 315px 92px 52px;
+    padding: 7px 315px 62px 52px;
 
-    gap: 21px;
+    gap: 24px;
   }
 
   @media (min-width: $desktop-width) {
+    min-height: 374px;
     padding: 77px 62px 63px 52px;
 
     gap: 0;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -92,21 +104,20 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    padding: 0;
 
     font-size: 36px;
     line-height: 36px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 73px;
+    margin-bottom: 73px;
     padding-left: 162px;
   }
 }
 
 .prospects__item-text {
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 22px;
 
   font-size: 14px;
   line-height: 18px;
@@ -115,10 +126,16 @@
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 11px;
+
     font-size: 16px;
     line-height: 24px;
 
     border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 
@@ -132,19 +149,19 @@
   font-size: 16px;
   line-height: 16px;
   font-family: $font-oswald;
-  text-align: center;
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
 
   @media (min-width: $tablet-width) {
-    margin-top: 19px;
     padding-right: 58px;
+
+    font-size: 20px;
+    line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 14px;
-    padding-right: 59px;
+    margin-top: auto;
   }
 
   &::after {
@@ -156,7 +173,7 @@
     width: 24px;
     height: 12px;
 
-    background-image: url("../img/svg/arrow.svg");
+    background-image: url("../img/svg/icon-arrow-right.svg");
     background-repeat: no-repeat;
     background-position: right center;
     background-size: 32px 12px;

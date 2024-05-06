@@ -2,30 +2,22 @@
   position: relative;
 
   margin: 0 -20px;
-  margin-bottom: 10px;
   padding-bottom: 10px;
   overflow: hidden;
 
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
-  font-family: $font-oswald;
-  color: #000000;
-
   @media (min-width: $tablet-width) {
-    margin: 0 -30px 49px;
+    margin: 0 -30px;
     padding-left: 30px;
-    overflow: visible;
-
-    font-size: 36px;
-    line-height: 36px;
-    font-family: $font-oswald;
   }
 
   @media (min-width: $desktop-width) {
-    margin: -23px 0 -13px -110px;
+    margin: 0 -20px;
     padding-left: 70px;
-    overflow: hidden;
+  }
+
+  @media (min-width: 1440px) {
+    margin: 0 -102px;
+    padding-left: 70px;
   }
 
   &::after,
@@ -65,6 +57,10 @@
   background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
-    padding: 0 41px 0 39px;
+    padding: 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 33px;
   }
 }

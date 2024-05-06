@@ -15,7 +15,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 34px 0 44px;
+    padding: 47px 0 44px;
   }
 }
 
@@ -87,7 +87,7 @@
     padding: 23px 20px;
 
     @media (min-width: $tablet-width) {
-      padding: 21px 53px 20px 70px;
+      padding: 21px 70px 20px;
     }
 
     @media (min-width: $desktop-width) {
@@ -102,13 +102,13 @@
     border-bottom: 1px solid #d9d9d9;
 
     @media (min-width: $tablet-width) {
-      padding: 75px 70px 36px 97px;
+      padding: 51px 70px 25px;
 
       border: none;
     }
 
     @media (min-width: $desktop-width) {
-      padding: 47px 0 20px 26px;
+      padding: 21px 0;
     }
   }
 
@@ -116,7 +116,7 @@
     padding: 43px 20px 25px;
 
     @media (min-width: $tablet-width) {
-      padding: 72px 53px 70px 70px;
+      padding: 71px 70px 70px;
     }
 
     @media (min-width: $desktop-width) {
@@ -128,7 +128,7 @@
     padding: 36px 20px 20px;
 
     @media (min-width: $tablet-width) {
-      padding: 82px 54px 65px 70px;
+      padding: 82px 70px 67px;
     }
 
     @media (min-width: $desktop-width) {
@@ -137,7 +137,7 @@
   }
 
   &--check {
-    padding: 32px 20px 2px;
+    padding: 32px 20px 4px;
 
     @media (min-width: $tablet-width) {
       padding: 53px 70px 17px;
@@ -154,14 +154,14 @@
     @media (min-width: $tablet-width) {
       display: grid;
       align-items: center;
-      padding: 23px 70px 62px;
+      padding: 34px 70px 62px;
 
-      gap: 20px 46px;
+      gap: 20px 30px;
       grid-template-columns: repeat(2, 1fr);
     }
 
     @media (min-width: $desktop-width) {
-      padding: 13px 110px 82px;
+      padding: 24px 110px 79px;
 
       gap: 20px 80px;
     }
@@ -207,7 +207,6 @@
   font-size: 16px;
   line-height: 18px;
   font-family: $font-oswald;
-  // color: #444444;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
@@ -299,10 +298,6 @@ textarea.form__input {
     top: -3px;
   }
 
-  @media (min-width: $desktop-width) {
-    top: -3px;
-  }
-
   & br {
     @media (min-width: $tablet-width) {
       display: none;
@@ -355,11 +350,11 @@ textarea.form__input {
   }
 
   &--mail::after {
-    mask-image: url("../../img/sprite.svg#icon-mail");
+    mask-image: url("../img/sprite.svg#icon-mail");
   }
 
   &--phone::after {
-    mask-image: url("../../img/sprite.svg#icon-tel");
+    mask-image: url("../img/sprite.svg#icon-tel");
   }
 
   &:focus-within::after {

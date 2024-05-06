@@ -1,20 +1,30 @@
 .control {
+  display: grid;
   margin: 0;
   padding: 0;
 
   list-style-type: none;
+
+  gap: 12px;
+  grid-template-columns: 1fr;
+}
+
+.control--radio {
+  @media (min-width: $tablet-width) {
+    padding: 24px 28px;
+
+    border: 1px solid #e7e7e7;
+  }
 }
 
 .control--check {
   @media (min-width: $tablet-width) {
-    display: grid;
-
-    gap: 19px 75px;
+    gap: 33px 57px;
     grid-template-columns: repeat(2, 1fr);
   }
 
   @media (min-width: $desktop-width) {
-    gap: 14px 82px;
+    gap: 33px 78px;
     grid-template-columns: repeat(4, 1fr);
   }
 }
@@ -23,13 +33,13 @@
   display: grid;
   align-items: center;
   width: fit-content;
-  margin-bottom: 13px;
+  min-height: 30px;
 
   gap: 15px;
-  grid-template-columns: repeat(2, auto);
+  grid-template-columns: auto 1fr;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 13px;
+    min-height: 40px;
   }
 
   &:disabled {
@@ -108,4 +118,9 @@
   border-radius: 50%;
   transform: translate(-50%, -50%);
   opacity: 1;
+
+  @media (min-width: $tablet-width) {
+    width: 18px;
+    height: 18px;
+  }
 }
