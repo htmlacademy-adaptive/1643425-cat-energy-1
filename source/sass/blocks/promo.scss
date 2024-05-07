@@ -55,7 +55,7 @@
     z-index: 2;
 
     margin: 0;
-    padding: 0;
+    padding: 0 90px;
 
     background: none;
   }
@@ -76,6 +76,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .promo__text {
@@ -91,6 +95,10 @@
     line-height: 20px;
     text-align: start;
     color: #000000;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 

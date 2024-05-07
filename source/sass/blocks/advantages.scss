@@ -15,6 +15,8 @@
 .advantages__title {
   margin-bottom: 38px;
 
+  text-align: start;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 59px;
   }
@@ -32,7 +34,7 @@
   @media (min-width: $tablet-width) {
     counter-reset: num;
 
-    gap: 77px 60px;
+    gap: 77px 76px;
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -57,7 +59,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 123px 75px 45px 0;
+    padding: 123px 65px 45px 0;
 
     font-size: 16px;
     line-height: 24px;
