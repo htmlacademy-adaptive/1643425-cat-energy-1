@@ -1,11 +1,8 @@
 .logo {
-  /* display: block;
-  width: fit-content;
   color: #111111;
-  text-decoration: none; */
-  --color-text: #111111;
 
-  /* fill: currentColor; */
+  --color-text: #111111;
+  fill: currentColor;
 
   &--header {
     display: grid;

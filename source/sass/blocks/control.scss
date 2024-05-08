@@ -40,6 +40,8 @@
 
   @media (min-width: $tablet-width) {
     min-height: 40px;
+
+    cursor: pointer;
   }
 
   &:disabled {
@@ -62,6 +64,8 @@
   line-height: 18px;
   font-family: $font-oswald;
   text-transform: uppercase;
+
+  cursor: pointer;
 
   grid-template-columns: repeat(2, auto);
 
@@ -86,6 +90,7 @@
   background-repeat: no-repeat;
   background-position: center;
   border: 1px solid #cdcdcd;
+  cursor: pointer;
 
   appearance: none;
 

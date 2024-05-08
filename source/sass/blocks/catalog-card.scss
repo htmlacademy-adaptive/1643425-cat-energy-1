@@ -3,8 +3,8 @@
 
   list-style: none;
 
-  gap: 64px 80px;
-  grid-template-columns: repeat(4, 1fr);
+  /* gap: 64px 80px;
+  grid-template-columns: repeat(4, 1fr); */
 
   @media (max-width: 767px) {
     padding-bottom: 9px;
@@ -21,6 +21,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    gap: 64px 80px;
     grid-template-columns: repeat(4, 1fr);
   }
 }
@@ -40,7 +41,7 @@
 .catalog-card__wrapper {
   display: grid;
   align-items: start;
-  padding: 20px 20px 25px;
+  padding: 20px 20px 24px;
 
   gap: 12px 0;
   grid-template-columns: 140px 1fr;
@@ -73,6 +74,15 @@
   @media (min-width: $desktop-width) {
     width: 169px;
     height: 210px;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.8;
   }
 }
 
