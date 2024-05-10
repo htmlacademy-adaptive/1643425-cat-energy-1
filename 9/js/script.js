@@ -12,4 +12,7 @@ menuBtn.addEventListener('click', (evt) => {
   evt.preventDefault();
   menu.classList.toggle('header-nav--open');
 });
-
+//карта
+if (document.querySelector('.map--nojs')) {
+  document.querySelector('.map--nojs').classList.remove('map--nojs');
+}
