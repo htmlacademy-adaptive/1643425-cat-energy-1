@@ -23,7 +23,7 @@
 .additional__title {
   position: relative;
 
-  margin-bottom: 28px;
+  margin-bottom: 25px;
 
   font-weight: 400;
   font-size: 24px;
@@ -65,7 +65,7 @@
 .additional__item {
   display: grid;
   justify-content: space-between;
-  padding: 12px 0 19px;
+  padding: 13px 0 18px;
 
   border-top: 1px solid #cdcdcd;
 
@@ -150,7 +150,7 @@
 }
 
 .additional__button {
-  padding: 8px;
+  padding: 12px 8px 10px 8px;
 
   grid-column: 1/-1;
 
