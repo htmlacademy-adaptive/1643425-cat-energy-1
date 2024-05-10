@@ -3,9 +3,6 @@
 
   list-style: none;
 
-  /* gap: 64px 80px;
-  grid-template-columns: repeat(4, 1fr); */
-
   @media (max-width: 767px) {
     padding-bottom: 9px;
 
@@ -95,6 +92,15 @@
 .catalog-card__link {
   color: #222222;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
 }
 
 .catalog-card__title {
@@ -263,4 +269,14 @@
   color: #444444;
 
   background-color: #f2f2f2;
+
+  &:hover,
+  &:focus {
+    background-color: darken($color: #f2f2f2, $amount: 15%);
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
 }

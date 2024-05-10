@@ -69,16 +69,24 @@
 
   grid-template-columns: repeat(2, auto);
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  .control-label:disabled {
+    opacity: 0.8;
+
+    pointer-events: none;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
   }
-}
-
-.control__label:disabled ~ .control__input {
-  opacity: 0.3;
-
-  pointer-events: none;
 }
 
 .control__input {

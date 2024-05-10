@@ -350,11 +350,11 @@ textarea.form__input {
   }
 
   &--mail::after {
-    mask-image: url("../img/sprite.svg#icon-mail");
+    mask-image: url("../img/sprite.svg#mail");
   }
 
   &--phone::after {
-    mask-image: url("../img/sprite.svg#icon-tel");
+    mask-image: url("../img/sprite.svg#phone");
   }
 
   &:focus-within::after {

@@ -136,7 +136,7 @@
                 <picture>
                   <source media="(min-width: 768px)" type="image/webp" srcset="img/chubby-cat-tablet.webp 1x, img/chubby-cat-tablet-@2x.webp 2x" width="560" height="512">
                   <source media="(min-width:768px)" type="image/png" srcset="img/chubby-cat-tablet.png 1x, img/chubby-cat-tablet-@2x.png 2x" width="560" height="512">
-                  <source type="image/webp" srcset="img/chubby-cat.webp 1x, img/chubby-cat-@2x.webp 2x" width="560" height="512">
+                  <source type="image/webp" srcset="img/chubby-cat.webp 1x, img/chubby-cat-@2x.webp 2x" width="280" height="256">
                   <img class="slider__image-cat" src="img/chubby-cat.png" srcset="img/chubby-cat-@2x.png 2x" alt="Пухлый кот" width="280" height="256">
                 </picture>
               </div>
@@ -144,7 +144,7 @@
                 <picture>
                   <source media="(min-width: 768px)" type="image/webp" srcset="img/skinny-cat-tablet.webp 1x, img/skinny-cat-tablet-@2x.webp 2x" width="560" height="512">
                   <source media="(min-width:768px)" type="image/png" srcset="img/skinny-cat-tablet.png 1x, img/skinny-cat-tablet-@2x.png 2x" width="560" height="512">
-                  <source type="image/webp" srcset="img/skinny-cat.webp 1x, img/skinny-cat-@2x.webp 2x" width="560" height="512">
+                  <source type="image/webp" srcset="img/skinny-cat.webp 1x, img/skinny-cat-@2x.webp 2x" width="280" height="256">
                   <img class="slider__image-cat" src="img/skinny-cat.png" srcset="img/skinny-cat-@2x.png 2x" alt="Худой кот" width="280" height="256">
                 </picture>
               </div>
@@ -163,7 +163,7 @@
 
     </main>
     <footer class="page-footer">
-      <section class="page-footer__map map map--home">
+      <section class="page-footer__map map map--home map--nojs">
         <div class="map__container container">
           <h2 class="visually-hidden">Местонахождение.</h2>
           <div class="map__contact">
@@ -174,7 +174,14 @@
         <div class="map__iframe-container">
           <noscript>
             <a class="map__img" href="#">
-              <img src="img/map.png" alt="Карта" width="320" height="362">
+              <picture>
+                <source media="(min-width: 1260px)" type="image/webp" srcset="img/map-desktop.webp 1x, img/map-desktop-@2x.webp 2x" width="1440" height="400">
+                <source media="(min-width: 1260px)" type="image/png" srcset="img/map-desktop.png 1x, img/map-desktop-@2x.png 2x" width="1440" height="400">
+                <source media="(min-width: 768px)" type=" image/webp" srcset="img/map-tablet.webp 1x, img/map-tablet-@2x.webp 2x" width="768" height="400">
+                <source media="(min-width: 768px)" type="image/png" srcset="img/map-tablet.png 1x, img/map-tablet-@2x.png 2x" width="768" height="400">
+                <source type="image/webp" srcset="img/map.webp 1x, img/map-@2x.webp 2x" width="320" height="362">
+                <img src="img/map.png" srcset="img/map-@2x.png" alt="Карта" width="320" height="362">
+              </picture>
             </a>
           </noscript>
           <div class="map__iframe">

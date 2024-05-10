@@ -34,7 +34,7 @@
             <use href="img/sprite.svg#logo-text"></use>
           </svg>
         </a>
-        <nav class="header-nav">
+        <nav class="header-nav header-nav--nojs">
           <button class="header-nav__toggle" type="button" aria-label="Открыть меню">
             <span class="header-nav__toggle-decor"></span>
           </button>
@@ -152,7 +152,7 @@
 
     </main>
     <footer class="page-footer">
-      <section class="page-footer__map map">
+      <section class="page-footer__map map map--nojs">
         <div class="map__container container">
           <h2 class="visually-hidden">Местонахождение.</h2>
           <div class="map__contact map__contact-position">
@@ -163,7 +163,14 @@
         <div class="map__iframe-container">
           <noscript>
             <a class="map__img" href="#">
-              <img src="img/map.png" alt="Карта" width="320" height="362">
+              <picture>
+                <source media="(min-width: 1260px)" type="image/webp" srcset="img/map-desktop.webp 1x, img/map-desktop-@2x.webp 2x" width="1440" height="400">
+                <source media="(min-width: 1260px)" type="image/png" srcset="img/map-desktop.png 1x, img/map-desktop-@2x.png 2x" width="1440" height="400">
+                <source media="(min-width: 768px)" type=" image/webp" srcset="img/map-tablet.webp 1x, img/map-tablet-@2x.webp 2x" width="768" height="400">
+                <source media="(min-width: 768px)" type="image/png" srcset="img/map-tablet.png 1x, img/map-tablet-@2x.png 2x" width="768" height="400">
+                <source type="image/webp" srcset="img/map.webp 1x, img/map-@2x.webp 2x" width="320" height="362">
+                <img src="img/map.png" srcset="img/map-@2x.png" alt="Карта" width="320" height="362">
+              </picture>
             </a>
           </noscript>
           <div class="map__iframe">
