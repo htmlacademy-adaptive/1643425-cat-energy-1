@@ -16,6 +16,8 @@
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
+    padding: 11px 0;
+
     border: none;
   }
 
@@ -26,35 +28,13 @@
       &::after {
         content: "";
         position: absolute;
-        right: 3px;
+        right: 0;
         bottom: 0;
-        left: 28px;
+        left: 0;
 
         height: 2px;
 
         background: #68b738;
-      }
-    }
-
-    @media (min-width: $desktop-width) {
-      &::after {
-        content: "";
-        position: absolute;
-        right: 5px;
-        bottom: 0;
-        left: 31px;
-
-        height: 2px;
-
-        background: #68b738;
-      }
-
-      &:first-child {
-        &:after {
-          @media (min-width: $desktop-width) {
-            background: #ffffff;
-          }
-        }
       }
     }
   }
@@ -62,7 +42,7 @@
 
 .nav-list__link {
   display: block;
-  padding: 22px;
+  padding: 22px 22px 23px;
 
   font-weight: 400;
   font-size: 20px;
@@ -74,7 +54,7 @@
   text-decoration: none;
 
   @media (min-width: $tablet-width) {
-    padding: 14px 4px 9px 29px;
+    padding: 0;
 
     font-size: 18px;
     line-height: 24px;
@@ -82,7 +62,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 12px 2px 9px 30px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #111111;
   }
 
   &:hover,
@@ -96,9 +78,14 @@
 }
 
 .page-header--background {
+  .nav-list__item--current::after {
+    @media (min-width: $desktop-width) {
+      background-color: #ffffff;
+    }
+  }
+
   .nav-list__link {
     @media (min-width: $desktop-width) {
-      font-size: 20px;
       color: #ffffff;
     }
   }

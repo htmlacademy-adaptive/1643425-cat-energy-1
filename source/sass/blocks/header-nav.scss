@@ -11,10 +11,15 @@
     position: relative;
 
     display: flex;
+    padding-right: 5px;
 
-    @media (min-width: $desktop-width) {
-      background-color: transparent;
-    }
+    gap: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+
+    background-color: transparent;
   }
 }
 
@@ -23,7 +28,9 @@
 
   width: 24px;
   height: 24px;
+  padding: 0;
 
+  background-color: transparent;
   border: none;
   cursor: pointer;
 
@@ -34,12 +41,14 @@
 
 .header-nav__toggle-decor {
   position: absolute;
-  left: 0;
+  top: 50%;
+  left: 50%;
 
   width: 24px;
   height: 2px;
 
   background-color: #000000;
+  transform: translate(-50%, -50%);
 
   &::before,
   &::after {

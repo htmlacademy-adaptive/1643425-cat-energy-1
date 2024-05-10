@@ -8,7 +8,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    bottom: -13px;
+    bottom: 0;
     z-index: -1;
 
     width: 50%;
@@ -49,6 +49,6 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 55px;
-    padding-bottom: 41px;
+    padding-bottom: 27px;
   }
 }
