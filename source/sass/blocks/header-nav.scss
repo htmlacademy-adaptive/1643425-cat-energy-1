@@ -11,6 +11,8 @@
     position: relative;
 
     display: flex;
+    flex-wrap: wrap;
+    max-width: 506px;
     padding-right: 5px;
 
     gap: 34px;
