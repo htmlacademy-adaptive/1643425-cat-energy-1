@@ -40,8 +40,6 @@
 
   @media (min-width: $tablet-width) {
     min-height: 40px;
-
-    cursor: pointer;
   }
 
   @media (min-width: $tablet-width) {
@@ -59,20 +57,7 @@
   font-family: $font-oswald;
   text-transform: uppercase;
 
-  cursor: pointer;
-
   grid-template-columns: repeat(2, auto);
-
-  /*
-  &:active {
-    opacity: 0.3;
-  }
-
-  .control-label:disabled {
-    opacity: 0.8;
-
-    pointer-events: none;
-  } */
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -89,7 +74,6 @@
   background-repeat: no-repeat;
   background-position: center;
   border: 1px solid #cdcdcd;
-  cursor: pointer;
 
   appearance: none;
 
@@ -133,6 +117,19 @@
   }
 }
 
-.control__label:hover {
+.control__item:hover .control__label,
+.control__item:hover .control__input {
+  opacity: 0.8;
+}
+
+.control__item:active .control__label,
+.control__item:active .control__input {
   opacity: 0.6;
+}
+
+.control__item .control__input:disabled,
+.control__input:disabled + .control__label {
+  opacity: 0.3;
+
+  pointer-events: none;
 }
