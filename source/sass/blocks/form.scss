@@ -168,7 +168,51 @@
   }
 
   &--lines {
-    border-top: 2px solid $color-main;
+    position: relative;
+
+    @media (min-width: $desktop-width) {
+      margin: 0 -20px;
+      padding-left: 70px;
+    }
+
+    @media (min-width: 1440px) {
+      margin: 0 auto;
+      padding-left: 110px;
+    }
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      top: -13px;
+
+      display: inline-block;
+      width: 100vw;
+      height: 2px;
+      margin-right: -100%;
+
+      vertical-align: middle;
+
+      background-color: #68b738;
+
+      @media (min-width: $tablet-width) {
+        top: -18px;
+      }
+    }
+
+    &::before {
+      display: none;
+      margin-right: auto;
+      margin-left: -100%;
+
+      @media (min-width: $tablet-width) {
+        display: inline-block;
+      }
+    }
+
+    &::after {
+      left: 0;
+    }
   }
 }
 
@@ -218,7 +262,7 @@
 .form__input {
   width: 100%;
   height: 45px;
-  padding: 9px 14px;
+  padding: 9px 40px 9px 15px;
 
   font-weight: 400;
   font-size: 16px;
@@ -250,7 +294,6 @@
 
   @media (min-width: $tablet-width) {
     height: 52px;
-    padding: 9px 18px;
 
     font-size: 20px;
     line-height: 30px;
@@ -305,7 +348,21 @@ textarea.form__input {
   }
 }
 
+.form__fieldset--contacts.form__fieldset--lines {
+  &::after,
+  &::before {
+    top: -29px;
+
+    @media (min-width: $tablet-width) {
+      top: -18px;
+    }
+  }
+}
+
 .form__legend {
+  position: relative;
+  z-index: 2;
+
   margin: 0 -20px;
   padding: 0 20px;
 
@@ -313,6 +370,8 @@ textarea.form__input {
   line-height: 27px;
   font-family: $font-oswald;
   color: #000000;
+
+  background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
     position: relative;
